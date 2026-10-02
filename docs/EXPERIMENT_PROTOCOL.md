@@ -487,3 +487,43 @@ In that case, reposition the work as:
 - real-bank naturally missing data.
 
 Do not add optional components until the core hypothesis survives the pilot.
+
+---
+
+## 17. Authorized temporal feasibility branch (2026-10-03)
+
+The first static pilot has reproduced the stable-prediction/revised-reason
+phenomenon. The subsequent requested temporal extension is an additive, one-seed
+feasibility experiment, not completion of the main paper matrix above.
+Its literature-first decision is recorded in
+[TEMPORAL_MODEL_RESEARCH.md](TEMPORAL_MODEL_RESEARCH.md); the frozen detailed
+contract is [TEMPORAL_MODEL_SPEC.md](TEMPORAL_MODEL_SPEC.md).
+
+Keep the original LR/XGBoost pipeline. Add shared-input flat LR/XGBoost,
+vanilla GRU and a compact value/mask/delta GRU with separate static features.
+Use official April-to-September order, training-only transforms, the existing
+five partitions, identical evaluation masks and no target-dependent simulation.
+Compare complete-only versus masked training and BCE versus weighted BCE/focal
+without combining imbalance treatments. Evaluate complete, MCAR10, MCAR30 and
+anchor-based MAR30. Fit probability calibration on its reserved partition;
+reason-risk calibration remains unused until a selector is implemented.
+
+Integrated Gradients explains recurrent raw logits with a fixed training value
+reference and endpoint-specific fixed availability context. The original event
+still compares the same predictor before/after verification among originally
+observed fields. Value-only restoration isolates financial values from context
+changes. TreeSHAP and conditional IG have different attribution semantics;
+cross-model revision rates require coverage/reference sensitivity checks.
+
+The bounded default computes predictions on every test record and attributions
+on a predeclared, label-independent shared subset of 400 test records. All reason
+denominators must identify this subset. Risk-coverage curves without a calibrated
+selector are descriptive and do not certify the 10% release-risk target.
+No learned uncertainty/reliability label, reconstruction objective or revision
+head is implied by an exposed diagnostic tensor. Those tasks remain conditional
+on the staged evidence and the original leakage/selector rules.
+
+Keep negative results. Do not promote the RNN to the central contribution unless
+five-seed matched controls establish both useful robustness and acceptable
+calibration/explanation reliability. Architecture components and generic
+temporal-plus-masking credit prediction are established prior art.

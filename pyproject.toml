@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "financepaper"
+version = "0.1.0"
+description = "Reproducible pilot of reason revision under incomplete credit information"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.13,<2",
+  "scikit-learn>=1.5,<1.8",
+  "xgboost>=3.0,<3.2",
+  "shap>=0.48,<0.51",
+  "matplotlib>=3.9,<4",
+  "joblib>=1.4,<2",
+  "pyyaml>=6.0,<7",
+  "xlrd>=2.0,<3",
+]
+
+[project.optional-dependencies]
+temporal = ["torch>=2.8,<3"]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<9"]
+
+[project.scripts]
+financepaper = "financepaper.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/financepaper"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

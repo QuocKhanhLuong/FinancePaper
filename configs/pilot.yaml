@@ -1,0 +1,30 @@
+# One seed, one independently drawn MCAR mask per record, no risk selector.
+seed: 42
+data_path: data/raw/default of credit card clients.xls
+output_dir: outputs/pilot
+missing_rate: 0.30
+background_size: 64
+logistic:
+  c_values: [0.1, 1.0, 10.0]
+  cv_folds: 3
+  max_iter: 3000
+xgboost:
+  max_depths: [2, 3, 4]
+  n_estimators: 200
+  learning_rate: 0.05
+  early_stopping_rounds: 20
+  min_child_weight: 5
+  subsample: 1.0
+  colsample_bytree: 1.0
+  reg_lambda: 1.0
+reasons:
+  k: 3
+  # Development-only: largest magnitude retaining >=90% of coverage at 0.001.
+  min_attribution_grid: [0.001, 0.01, 0.025, 0.05]
+  development_coverage_retention: 0.90
+  attribution_tolerance: 0.000001
+  rank_tolerance: 0
+diagnostics:
+  stable_probability_delta: 0.02
+  calibration_bins: 10
+  examples_per_model: 5

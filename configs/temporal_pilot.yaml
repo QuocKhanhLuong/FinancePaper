@@ -1,0 +1,52 @@
+# Bounded one-seed temporal pilot.  Outputs must be written to a new directory.
+seed: 42
+data_path: data/raw/default of credit card clients.xls
+output_dir: outputs/temporal_pilot
+device: auto
+background_size: 64
+hidden_size: 64
+static_hidden: 32
+fusion_hidden: 64
+dropout: 0.10
+training:
+  epochs: 25
+  patience: 5
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  gradient_clip: 5.0
+  gamma: 2.0
+  alpha: 0.75
+missingness:
+  mcar_rates: [0.10, 0.30]
+  mar_rate: 0.30
+  augmentation_rates: [0.0, 0.10, 0.20, 0.30]
+explanations:
+  k: 3
+  min_attribution_grid: [0.001, 0.01, 0.025, 0.05]
+  development_coverage_retention: 0.90
+  # Revision-event epsilon; IG completeness has its own 0.002 + 0.001*|delta|
+  # numerical check and must not be reused for reason semantics.
+  attribution_tolerance: 0.000001
+  rank_tolerance: 0
+  ig_steps: 32
+  ig_max_steps: 128
+  ig_batch_size: 64
+  test_records: 400
+  development_records: 256
+  matched_coverage_targets: [0.25, 0.50, 1.0]
+  stable_probability_delta: 0.02
+  debug_tensors: false
+calibration:
+  bins: 10
+  threshold_grid_min: 0.01
+  threshold_grid_max: 0.99
+  threshold_grid_step: 0.01
+xgboost:
+  max_depth: 3
+  n_estimators: 200
+  learning_rate: 0.05
+  min_child_weight: 5
+  subsample: 1.0
+  colsample_bytree: 1.0
+  reg_lambda: 1.0

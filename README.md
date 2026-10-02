@@ -4,6 +4,103 @@ Research repository for:
 
 > **When Should Credit-Risk Models Withhold Reasons? Verification-Aware Selective Explanations under Missing Information**
 
+## Reproducible first pilot
+
+The first pilot implements Taiwan, one seed, complete and MCAR 30% test records,
+train-fitted median/mode imputation, Logistic Regression, XGBoost, and restoration
+of the true hidden values. It tests whether predictions can stay relatively
+stable while reasons from the **same fixed model** change. It does not yet
+estimate or calibrate a reason-release policy.
+
+From the repository root, with [uv](https://docs.astral.sh/uv/) and Python 3.11+:
+
+```bash
+uv sync --frozen
+uv run --frozen financepaper download
+uv run --frozen pytest -q
+uv run --frozen financepaper pilot --config configs/pilot.yaml
+```
+
+On macOS, XGBoost also requires the OpenMP runtime: `brew install libomp`.
+
+The download is explicit and checksum-verified. Tests use synthetic local data
+and require no network. The default run uses all 30,000 official records and
+evaluates all 4,500 test records, without sampling a favorable subset.
+
+To repeat the run without overwriting results:
+
+```bash
+uv run --frozen financepaper pilot --config configs/pilot.yaml --output outputs/pilot-repeat
+cmp outputs/pilot/summary.json outputs/pilot-repeat/summary.json
+```
+
+Raw data, output directories, fitted models, plots and caches are ignored by Git.
+Commit the source, configuration and `uv.lock`; regenerate experiment artifacts.
+The CLI refuses to write into a nonempty output directory. A completed run has
+`manifest.json`; an interrupted run may leave partial artifacts without that
+completion marker.
+
+Main artifacts in `outputs/pilot/`:
+
+| File | Purpose |
+| --- | --- |
+| `summary.json` | Prediction metrics, coverage, revision denominators and stable-prediction/revised-reason counts |
+| `records.csv` | All test cases, model/condition, reasons, predictions and nullable revision event |
+| `frozen_selection.json` | Train/development model selection, development thresholds and feature mapping, saved before test evaluation |
+| `split_assignments.csv`, `background_ids.csv`, `*_masks.csv` | Audit record assignments, training reference rows and exact hidden cells |
+| `*_attributions.npz` | Signed original-feature attributions before/restored, row IDs and feature order |
+| `stable_prediction_revised_examples.json` | Representative qualifying cases, without assuming the phenomenon must occur |
+| `prediction_vs_explanation.png`, `calibration.png`, `calibration.csv` | Diagnostic scatterplot and uncalibrated prediction reliability curve |
+| `*_pipeline.joblib`, `*_background.npy` | Fitted preprocessing/model and fixed encoded SHAP reference |
+| `manifest.json`, `config.yaml` | Dataset/artifact/code hashes, versions, seeds and resolved configuration |
+
+See [pilot definitions and limitations](docs/PILOT_IMPLEMENTATION.md) for the
+precise event, development selection, denominators and reproducibility checks,
+and [data provenance](data/README.md) for the pinned UCI source. The broader
+research plan below describes later phases, not features already implemented.
+
+## Experimental temporal branch
+
+The [literature decision](docs/TEMPORAL_MODEL_RESEARCH.md) authorizes a small
+experimental comparison, not a new GRU architecture claim. The primary candidate
+is GRU-Simple with financial values, observed masks and elapsed monthly deltas,
+plus a separate static branch. Vanilla GRU and the original LR/XGBoost remain
+baselines. The [specification](docs/TEMPORAL_MODEL_SPEC.md) fixes the official
+April-to-September mapping, split boundaries, losses and attribution protocol.
+
+```bash
+uv sync --frozen --extra temporal
+uv run --frozen --extra temporal python scripts/run_temporal_pilot.py --device-info
+env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run --frozen --extra temporal pytest -q
+uv run --frozen --extra temporal python scripts/run_temporal_pilot.py --config configs/temporal_pilot.yaml
+# Explicit fallback or CPU verification:
+uv run --frozen --extra temporal python scripts/run_temporal_pilot.py --config configs/temporal_pilot.yaml --device cpu --output outputs/temporal-cpu
+```
+
+PyTorch is optional. Automatic device choice is MPS, then CUDA, then CPU;
+training uses float32. The script sets the three CPU thread limits above before
+loading numerical libraries (unless already explicitly configured). On the
+tested macOS/PyTorch 2.14.1 environment, the combined XGBoost/SHAP/PyTorch test
+process crashed with default thread pools and passed with these limits. They
+also prevent CPU oversubscription; MPS computation still runs on the GPU.
+The bounded one-seed run compares complete/masked training
+and BCE/weighted BCE/focal loss. It reports raw and independently calibrated
+prediction metrics for all test records under complete, MCAR10/30 and MAR30.
+Integrated Gradients explanations use a predeclared shared subset of 400 test
+records; expensive full-test attribution is a separate configurable run.
+
+The model exposes missingness diagnostics and optional hidden states/embeddings.
+Reason eligibility is not a calibrated release decision. Reconstruction,
+uncertainty ensembles and a trained revision-risk head remain deferred; their
+outputs are explicitly unavailable. The paper remains about explanation
+reliability unless controlled evidence supports a stronger temporal-model claim.
+
+The [measured temporal pilot report](docs/TEMPORAL_PILOT_RESULTS.md) records the
+one-seed MPS run, negative results and limitations. The primary GRU improved MAR
+prediction but did not beat augmented XGBoost on MCAR AP, and its reasons revised
+more often than vanilla GRU at matched coverage. This supports retaining the
+explanation-reliability framing.
+
 ## Core idea
 
 Credit-risk models may still produce a stable risk score when a customer's financial record is incomplete, while the **reasons shown to the user can change substantially after the missing information becomes available**.
