@@ -7,6 +7,12 @@ Research repository for:
 Working title; the project is now an **evaluation + selective explanation policy
 study**, not a new credit-classifier architecture paper.
 
+The [2026-10-03 novelty reassessment](docs/NOVELTY_REASSESSMENT_2026.md) incorporates
+explanation-guided acquisition and the September 2026 EDFA preprint. It supports
+only a bounded [budgeted reason-verification feasibility study](docs/BUDGETED_REASON_VERIFICATION_PLAN.md),
+not a new-algorithm claim. That study is PROPOSED / NOT RUN; all measured results
+and frozen confirmation protocols below remain in force.
+
 ## Stable-Core: implemented and tested, no coverage-superiority claim
 
 The [v2 study](docs/STABLE_CORE_STUDY_PROTOCOL.md) evaluates **variable-size reason
