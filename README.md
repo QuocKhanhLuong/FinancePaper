@@ -7,6 +7,46 @@ Research repository for:
 Working title; the project is now an **evaluation + selective explanation policy
 study**, not a new credit-classifier architecture paper.
 
+## Stable-Core: implemented and tested, no coverage-superiority claim
+
+The [v2 study](docs/STABLE_CORE_STUDY_PROTOCOL.md) evaluates **variable-size reason
+sets**, two completion families, B1–B6 baselines, and controls matched on each
+customer's reason count. It preserves all previous models/masks/results and uses
+the inspected Taiwan/Polish cohorts as an explicitly exploratory extension.
+
+At a 10% empirical calibration budget, donor+conditional Stable-Core releases
+meaningful-positive reasons for 90.82%/92.64% of Taiwan/Polish customer-condition
+cases, with reason failure 0.286%/0.243%. However, release-all already has aggregate
+failure 2.56%/3.90% and **higher coverage**; rank-only is also a strong control on
+the ranked target. The main superior-coverage hypothesis is not supported.
+Matched-size strength controls have higher failure, so some reason identity
+selection benefit exists. All conservative finite-grid policies release nothing.
+
+Read the [results and six figure descriptions](docs/STABLE_CORE_RESULTS.md),
+[final ten-question decision](docs/STABLE_CORE_DECISION.md), and
+[updated nearest-work review](docs/STABLE_CORE_RESEARCH_UPDATE.md).
+Stable-Core remains an optional operational strategy, not a replacement or a
+novel uncertainty algorithm. Freddie confirmation is still NOT RUN.
+
+Requires the historical local artifacts reproduced by the stages below. All new
+rows/caches/figures/models stay in ignored `outputs/stable_core_study/`.
+
+```bash
+uv run --frozen --extra temporal python scripts/run_stable_core_study.py freeze
+uv run --frozen --extra temporal python scripts/run_stable_core_study.py calibrate
+uv run --frozen --extra temporal python scripts/run_stable_core_study.py evaluate
+uv run --frozen --extra temporal python scripts/report_stable_core_study.py
+uv run --frozen --extra temporal python scripts/audit_stable_core_study.py
+uv run --frozen --extra temporal python scripts/supplement_stable_core_study.py
+# Run timing without concurrent tests/training/report generation.
+uv run --frozen --extra temporal python scripts/benchmark_stable_core_study.py
+uv run --frozen --extra temporal python scripts/write_stable_core_reports.py
+```
+
+The initial `stable_core.py` primitive is retained as design history; v2 serving
+and calibration use `reliability/reason_sets.py`. This study does not silently
+reinterpret the historical top-k reason-revision event.
+
 ## Large-scale validation: provenance accepted, real experiment not run
 
 The [provenance audit](docs/DATASET_PROVENANCE_AUDIT.md) selects exactly one new

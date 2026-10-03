@@ -1,5 +1,11 @@
 # Verification-calibrated stable reason sets — feasibility specification
 
+**Version note:** the user-requested [Stable-Core v2 study](STABLE_CORE_STUDY_PROTOCOL.md)
+supersedes the initial two-candidate cap and adds a magnitude-based target, all
+candidate reason sets and matched-size controls, before Freddie data access.
+The original specification below is retained as design history. Historical
+Taiwan/Polish revision definitions and results remain unchanged.
+
 **GO for bounded testing, not a proven improvement or novelty claim.** Frozen
 2026-10-03 before Freddie access. No new risk predictor, neural head or architecture.
 Mortgage efficacy, calibration and completion-family comparisons remain NOT RUN.

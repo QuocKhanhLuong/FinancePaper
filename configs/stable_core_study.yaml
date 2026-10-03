@@ -1,0 +1,17 @@
+version: stable_core_v2
+historical_root: outputs/decisive_validation
+output: outputs/stable_core_study
+seed: 20261005
+k: 8
+candidate_minimum: 0.01
+epsilon: 0.000001
+importance_rank: 2
+support_grid: [0, 0.5, 0.625, 0.75, 0.875, 1]
+lower_bound_grid: [0.01, 0.02, 0.05]
+score_quantiles: 21
+alphas: [0.05, 0.10, 0.15]
+targets: [meaningful, ranked]
+calibration: [empirical, conservative]
+bootstrap_draws: 1000
+timing_repetitions: 5
+timing_customers: 16

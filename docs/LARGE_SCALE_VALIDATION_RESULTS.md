@@ -1,5 +1,11 @@
 # Large-scale validation status — NOT RUN on Freddie data
 
+Subsequent work implemented and measured Stable-Core v2 on the existing Taiwan
+and Polish cohorts; see [Stable-Core results](STABLE_CORE_RESULTS.md). This does
+not change the missing-official-files gate or the Freddie NOT RUN status below.
+The 105-test receipt below describes the initial intake commit; the later v2
+study has its own 111-test receipt and independent output directory.
+
 Date: 2026-10-03. Historical Taiwan/Polish results are unchanged. This is an
 execution receipt and explicit evidence boundary, not a mortgage results paper.
 The researcher confirmed **no officially acquired Freddie files are available**.

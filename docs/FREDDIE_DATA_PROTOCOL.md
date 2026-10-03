@@ -4,6 +4,16 @@ Declared 2026-10-03 before acquiring new raw files or seeing mortgage outcomes.
 This additive branch leaves Taiwan/Polish models, masks, events and results intact.
 Current execution status is [NOT RUN on real Freddie data](LARGE_SCALE_VALIDATION_RESULTS.md).
 
+**Pre-access amendment:** the user-requested [Stable-Core v2 protocol](STABLE_CORE_STUDY_PROTOCOL.md)
+replaces the initial two-candidate cap for the partial-reason branch: all current
+available groups above .01 are candidates. Its meaningful-positive and ranked
+reason-failure targets, 108-point support/quantile grid, all baselines and exact
+per-customer size controls are fixed before Freddie access. The grouped top-2
+whole-explanation revision target below remains a separate historical comparator.
+Use the number of semantic groups G, not two, in the v2 cluster-bound denominator.
+The Taiwan/Polish [negative superiority result](STABLE_CORE_DECISION.md) does not
+authorize a new threshold family or predictor for mortgage confirmation.
+
 ## Data, access and reproducibility
 
 Use the single selected [Release 47 cohort](LARGE_DATASET_DECISION.md). The authorized

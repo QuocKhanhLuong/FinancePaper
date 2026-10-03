@@ -19,6 +19,10 @@ restart_seeds: [101, 102, 103]
 missingness: [mcar10, mcar30, group_missing]
 completion_k: 8
 reason_k: 2
+stable_core_version: stable_core_v2
+stable_core_candidates: all_available_groups_above_minimum
+stable_core_targets: [meaningful, ranked]
+stable_core_lower_bound_grid: [0.01, 0.02, 0.05]
 reason_minimum: 0.01
 sign_epsilon: 0.000001
 rank_epsilon: 0.000001
