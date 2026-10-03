@@ -4,6 +4,50 @@ Research repository for:
 
 > **When Should Credit-Risk Models Withhold Reasons? Verification-Aware Selective Explanations under Missing Information**
 
+## Verification-supervised revision study
+
+The next branch freezes the credit predictor and learns when its currently
+observed reasons may need revision. It uses **XGBoost 25-view plus a generic
+calibrated selector**, not a new recurrent architecture. Start with the
+[SOTA comparison](docs/SOTA_COMPARISON_2026.md),
+[metric audit](docs/REVISION_METRIC_AUDIT.md),
+[decision](docs/NEXT_MODEL_DECISION.md) and
+[specification](docs/REVISION_AWARE_MODEL_SPEC.md).
+The [results](docs/REVISION_AWARE_RESULTS.md) and
+[prediction/explanation analysis](docs/PREDICTION_EXPLANATION_DECOUPLING.md)
+separate measured results from remaining validation.
+The measured selector beats prediction-only uncertainty but loses to completion
+Monte Carlo revision estimation. The post-assessment recommendation is to stop
+new-head superiority claims and retain the evaluation/release-policy question.
+
+This study excludes the old 4,500 inspected test records **and** the untouched
+4,500 risk-calibration reserve. Three internal folds use the original 21,000
+training/development/calibration pool; all policies freeze before outer assessment.
+It remains an exploratory benchmark study, not independent confirmation of the
+whole adaptive research process. See the [frozen protocol](docs/REVISION_STUDY_PROTOCOL.md).
+
+```bash
+uv sync --frozen --extra temporal
+uv run --frozen --extra temporal python scripts/run_revision_study.py --stage audit --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/run_revision_study.py --stage baselines --output outputs/revision-repeat
+# Continue only after reviewing the diagnostic gate and recording the decision.
+uv run --frozen --extra temporal python scripts/run_revision_study.py --stage freeze --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/run_revision_study.py --stage assess --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/report_revision_study.py --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/summarize_revision_study.py --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/serialize_revision_diagnostics.py --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/benchmark_revision_inference.py --output outputs/revision-repeat
+uv run --frozen --extra temporal python scripts/audit_revision_study.py --output outputs/revision-repeat
+```
+
+The three-stage manifests record phase-specific source hashes. Assessment rejects
+changes to frozen sources, models or policies. Generated tables and seven PNG/PDF
+plot pairs live in `outputs/revision-repeat/analysis/`. Common current diagnostic
+JSONL and verification-only JSONL are separate files; serving code cannot accept
+restored values. A 10% empirical calibration threshold is not a guarantee; the
+conservative finite-family binomial policy is reported separately. All artifacts
+remain ignored by Git. CPU fallback: append `--device cpu` to study stages.
+
 ## Reproducible first pilot
 
 The first pilot implements Taiwan, one seed, complete and MCAR 30% test records,

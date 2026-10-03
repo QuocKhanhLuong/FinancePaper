@@ -1,0 +1,27 @@
+base_config: configs/temporal_pilot.yaml
+output_dir: outputs/revision_study
+partition_seed: 20261003
+folds: 3
+restart_seeds: [101, 102, 103]
+inner_sizes:
+  predictor_train: 8000
+  early_stopping: 1000
+  default_calibration: 1000
+  revision_train: 2000
+  diagnostic: 800
+  revision_calibration: 600
+  release_calibration: 600
+augmentation_views: 25
+audit_records: 384
+outer_explanation_records: 800
+shared_explainer_records: 48
+shared_permutations: 32
+completion_draws: 8
+completion_neighbours: 32
+completion_donors: 2048
+bootstrap_draws: 1000
+reason_k: 3
+reason_magnitude: 0.01
+sign_epsilon: 0.000001
+rank_epsilon: 0.000001
+risk_budget: 0.10

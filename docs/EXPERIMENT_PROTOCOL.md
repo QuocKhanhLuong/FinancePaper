@@ -543,3 +543,33 @@ has been viewed; new findings remain exploratory. Strict wins, ties, losses and
 undefined metrics must be reported, with both predictive and explanation
 coverage controls. A request for a universally winning model never licenses
 changing a metric, withholding a failure, or choosing settings using test scores.
+# Verification-supervised development addendum (2026-10-03)
+
+This additive branch follows the historical pilots; their test cohort is already
+inspected and must not guide further model development. The bounded
+[revision-study protocol](REVISION_STUDY_PROTOCOL.md) excludes both that 4,500
+customer test set and the original 4,500 risk-calibration reserve. It partitions
+the old 21,000 train/development/probability-calibration customers into three
+outer folds, with separate predictor, selector, diagnostic, probability and
+release-calibration partitions inside each fold. Customer copies never cross
+roles within a fold. All per-fold recipes and policies freeze before outer
+assessment. Global research decisions informed by pooled diagnostics mean this
+is internal exploratory assessment, not confirmation of the entire adaptive
+research process or a newly unseen population.
+
+The [metric audit](REVISION_METRIC_AUDIT.md) retains the original event and adds
+separate tie/sign sensitivity, semantic grouping and a shared explainer subset.
+The [selected strategy](NEXT_MODEL_DECISION.md) freezes XGBoost25 and learns a
+generic current-information-only revision selector. Restoration values are
+supervision/evaluation only. Selective prediction and selective explanation
+are evaluated separately; .01/.02/.05 probability stability is an oracle
+restoration diagnostic, not predictive correctness or calibrated confidence.
+No cross-model correctness ranking follows from TreeSHAP-versus-IG revision.
+
+Release policies use a separate customer pool, one assigned missing condition per
+customer, whole ties, a fixed finite threshold grid and a separate conservative
+binomial-bound analysis. Zero release has undefined conditional risk. Pooled
+mixture calibration does not imply mechanism-specific risk control. Predictor AP,
+calibration, restoration shift, revision and selective coverage remain separate
+Pareto dimensions. Report customer-cluster bootstrap intervals, fold mean/SD,
+missing outcomes and eligibility. External validation remains required.
