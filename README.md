@@ -7,6 +7,14 @@ Research repository for:
 Working title; the project is now an **evaluation + selective explanation policy
 study**, not a new credit-classifier architecture paper.
 
+Start with the [final consolidated results](docs/FINAL_RESEARCH_RESULTS.md)
+(2026-10-04): prediction controls, grouped decoupling, revision detectors, release
+policies, Stable-Core, runtime, stopped branches and metric definitions in one
+report. It consolidates completed experiments; it is not a new confirmation run.
+The supported framing remains evaluation + selective explanation policy, with
+**no established new-algorithm contribution** and ESWA **promising but incomplete**.
+Freddie validation, conformal envelopes and TabM remain NOT RUN.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
