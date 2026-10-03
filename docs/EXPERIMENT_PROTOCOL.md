@@ -527,3 +527,19 @@ Keep negative results. Do not promote the RNN to the central contribution unless
 five-seed matched controls establish both useful robustness and acceptable
 calibration/explanation reliability. Architecture components and generic
 temporal-plus-masking credit prediction are established prior art.
+
+## 18. Bounded follow-up after the temporal pilot (2026-10-03)
+
+The user requested further research and testing toward simultaneous metric
+improvement. [ROBUSTNESS_FOLLOWUP_PROTOCOL.md](ROBUSTNESS_FOLLOWUP_PROTOCOL.md)
+fixes the next experiment before its new test evaluation: a small development-only
+search over multi-view tree controls and additive/interaction logit blends, then
+five training restarts on the same seed-42 partitions. Preserve LR/XGBoost and
+the two GRU controls, probability-calibration boundaries, original restoration
+event and unused reason-risk calibration partition.
+
+This is not the original five-data-split main paper experiment. The prior test
+has been viewed; new findings remain exploratory. Strict wins, ties, losses and
+undefined metrics must be reported, with both predictive and explanation
+coverage controls. A request for a universally winning model never licenses
+changing a metric, withholding a failure, or choosing settings using test scores.

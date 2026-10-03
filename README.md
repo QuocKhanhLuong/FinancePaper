@@ -101,6 +101,38 @@ prediction but did not beat augmented XGBoost on MCAR AP, and its reasons revise
 more often than vanilla GRU at matched coverage. This supports retaining the
 explanation-reliability framing.
 
+## Bounded robustness follow-up
+
+The [follow-up protocol](docs/ROBUSTNESS_FOLLOWUP_PROTOCOL.md) tests stronger
+multi-view XGBoost controls and additive/tree logit blends. It freezes a small
+development-only candidate search, then compares five training restarts on the
+same customer split. The previous test cohort has already been inspected;
+these results remain exploratory. No model is promised to win every metric.
+
+```bash
+uv sync --frozen --extra temporal
+uv run --frozen --extra temporal python scripts/run_robustness_followup.py
+# Or separate all fitting/selection from the test phase:
+uv run --frozen --extra temporal python scripts/run_robustness_followup.py --stage fit --output outputs/followup-repeat
+uv run --frozen --extra temporal python scripts/run_robustness_followup.py --stage evaluate --output outputs/followup-repeat
+uv run --frozen --extra temporal python scripts/audit_robustness_followup.py --output outputs/followup-repeat
+```
+
+The fit phase writes all checkpoints, development choices, calibration and
+thresholds before test evaluation. The evaluation phase verifies frozen source,
+data and artifact hashes. Reuse of a nonempty run/evaluation directory is refused.
+Outputs include the full development leaderboard, per-restart prediction and
+reason metrics, matched coverage, calibration bins, per-record predictions and
+attributions, and explicit per-metric win/tie/loss tables. Data and artifacts
+remain ignored by Git. See the protocol for the recorded Orca launch failures;
+this follow-up has no independent worker review.
+
+The [measured follow-up report](docs/ROBUSTNESS_FOLLOWUP_RESULTS.md) records the
+five-restart result: the 50/50 additive/tree blend reduces MCAR30 reason revision
+at matched coverage, but loses calibration and some prediction metrics. Neither
+selected candidate dominates all declared metrics. The stronger 25-view XGBoost
+control remains essential.
+
 ## Core idea
 
 Credit-risk models may still produce a stable risk score when a customer's financial record is incomplete, while the **reasons shown to the user can change substantially after the missing information becomes available**.

@@ -1,0 +1,15 @@
+base_config: configs/temporal_pilot.yaml
+output_dir: outputs/robustness_followup_controlled
+split_seed: 42
+restart_seeds: [42, 43, 44, 45, 46]
+augmentation_views: 25
+regularized_estimators: 600
+regularized_min_child_weight: 20
+regularized_lambda: 10.0
+blend_weights: [0.25, 0.50, 0.75]
+reason_min_attribution: 0.01
+selection:
+  ap_tolerance: 0.005
+  auc_tolerance: 0.005
+  brier_tolerance: 0.002
+  log_loss_tolerance: 0.005
