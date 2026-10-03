@@ -7,6 +7,14 @@ Research repository for:
 Working title; the project is now an **evaluation + selective explanation policy
 study**, not a new credit-classifier architecture paper.
 
+The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
+is **NO-GO for a new-method claim on the current specification**. Existing
+multilabel conformal methods already construct inner/outer sets, and prior work
+already calibrates explanation outputs. The exact future-verification financial
+target remains a possible evaluation contribution; the audit does not claim it
+has been fully solved elsewhere. No envelope experiment or TabM training was
+started after this gate. Historical negative results below remain unchanged.
+
 The [2026-10-03 novelty reassessment](docs/NOVELTY_REASSESSMENT_2026.md) incorporates
 explanation-guided acquisition and the September 2026 EDFA preprint. It supports
 only a bounded [budgeted reason-verification feasibility study](docs/BUDGETED_REASON_VERIFICATION_PLAN.md),
