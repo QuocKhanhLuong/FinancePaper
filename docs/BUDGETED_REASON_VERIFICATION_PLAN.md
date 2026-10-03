@@ -1,6 +1,9 @@
 # Budgeted reason verification: one prospective feasibility study
 
-Status: **PROPOSED / NOT RUN on financial records**, 2026-10-03. Read the
+Original plan dated 2026-10-03. **2026-10-04 status:** the first
+[development headroom audit](VERIFICATION_HEADROOM_RESULTS.md) is MEASURED / NO-GO;
+full expected-value policy development remains NOT RUN. The prospective design
+below is retained as history, including its original future-tense wording. Read the
 [novelty reassessment](NOVELTY_REASSESSMENT_2026.md) first. This is not a claim of a
 new generic acquisition algorithm. It does not modify existing fitted models,
 reason definitions, datasets, calibration thresholds or historical results.

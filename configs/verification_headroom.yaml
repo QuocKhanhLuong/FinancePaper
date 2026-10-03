@@ -1,0 +1,15 @@
+version: one_query_headroom_v1
+output: outputs/verification_headroom
+seed: 20261004
+customers: 500
+conditions: [mcar10, mcar30]
+k: 8
+alphas: [0.05, 0.10, 0.15]
+targets: [meaningful, ranked]
+terminal_methods: [rank, stable_donor]
+bootstrap_draws: 1000
+minimum_customer_gain: 0.05
+batch_size: 128
+historical_root: outputs/decisive_validation
+policy_root: outputs/stable_core_study
+polish_path: data/raw/polish/5year.arff

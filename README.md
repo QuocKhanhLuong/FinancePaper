@@ -10,8 +10,28 @@ study**, not a new credit-classifier architecture paper.
 The [2026-10-03 novelty reassessment](docs/NOVELTY_REASSESSMENT_2026.md) incorporates
 explanation-guided acquisition and the September 2026 EDFA preprint. It supports
 only a bounded [budgeted reason-verification feasibility study](docs/BUDGETED_REASON_VERIFICATION_PLAN.md),
-not a new-algorithm claim. That study is PROPOSED / NOT RUN; all measured results
-and frozen confirmation protocols below remain in force.
+not a new-algorithm claim. The first development headroom gate is now **measured
+and NO-GO**; the full expected-value acquisition policy remains NOT RUN. All
+historical results and frozen confirmation protocols below remain in force.
+
+## One-query verification: completed headroom gate, NO-GO
+
+The [prospective protocol](docs/VERIFICATION_HEADROOM_PROTOCOL.md) and
+[measured report](docs/VERIFICATION_HEADROOM_RESULTS.md) cover 500 Polish
+development clusters, MCAR10/30, and all 12,537 possible single-field reveals.
+At the primary meaningful-reason target, zero-query strongest top-1 already
+reaches the retained-candidate customer ceiling: 93.4%/95.0% coverage with
+0.43%/2.53% observed reason failure. A hindsight oracle improves donor Stable-Core
+by only 0.2/1.6 coverage points, below the predeclared 5-point gate and still below
+top-1. At 10/15% budgets, release-all also attains full reason coverage. This does
+not justify developing a new acquisition method or changing the target to make
+one win. Prediction–explanation decoupling remains measurable.
+
+Taiwan has no new run: all its development-pool records have appeared in a
+historical outer prediction fold. The old test/reserve remains excluded.
+Freddie is NOT RUN. This is explicitly development reuse, not new confirmation.
+Reproduction commands, 1,000-draw cluster intervals, optimizer checks and the
+121-test receipt are documented in the report. No new classifier was trained.
 
 ## Stable-Core: implemented and tested, no coverage-superiority claim
 
