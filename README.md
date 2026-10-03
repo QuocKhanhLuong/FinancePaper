@@ -4,9 +4,79 @@ Research repository for:
 
 > **When Should Credit-Risk Models Withhold Reasons? Verification-Aware Selective Explanations under Missing Information**
 
-## Verification-supervised revision study
+Working title; the project is now an **evaluation + selective explanation policy
+study**, not a new credit-classifier architecture paper.
 
-The next branch freezes the credit predictor and learns when its currently
+## Decisive semantic, external and release-policy validation
+
+The [final decision](docs/FINAL_PAPER_DECISION.md) is **continue with a narrowed
+evaluation paper; promising but incomplete for ESWA**. New grouped and external
+results support prediction/explanation decoupling, but not a new uncertainty
+algorithm or a deployment risk guarantee. No new neural head or predictor search.
+
+- [Frozen semantic groups](docs/DOMAIN_REASON_GROUPS.md) and [grouped results](docs/DOMAIN_REASON_VALIDATION_RESULTS.md).
+- [Monte Carlo K/runtime ablation](docs/MONTE_CARLO_K_ABLATION.md) and [failure analysis](docs/MONTE_CARLO_FAILURE_ANALYSIS.md).
+- [Release-policy validation](docs/RELEASE_POLICY_VALIDATION.md).
+- [External protocol](docs/EXTERNAL_DATASET_PROTOCOL.md) and [Polish bankruptcy results](docs/EXTERNAL_VALIDATION_RESULTS.md).
+- [Pre-evaluation protocol](docs/DECISIVE_VALIDATION_PROTOCOL.md) and [implementation/assumption notes](docs/VALIDATION_IMPLEMENTATION_NOTES.md).
+
+At MCAR30 and raw probability shift <=.02, **group top2** reasons revise in 42/727
+stable eligible Taiwan cases (5.78%) and 85/552 Polish cases (15.40%). MC8 revision
+detection AP is .6926/.8580 versus .1447/.2622 for prediction-only detectors.
+These target-specific findings are not pooled credit-default prediction metrics.
+The strong rank-instability baseline is often indistinguishable from MC.
+
+The reference remains **XGBoost 25-view + completion MC K8**. K4 captures only 81%
+of K16's AP gain above prevalence on Taiwan; K8 captures 93%, below the predeclared
+95% criterion. At 10% declared risk target, grouped-top2 robust calibration retains
+61.46%/58.21% coverage with observed MCAR30 revision 3.25%/2.18%. Robust feature-level
+5% policies release nothing. Report failures and the release-all baseline.
+
+Run from the repository root. This phase requires the existing frozen
+`outputs/revision_study/fold_*/{predictors,release_model}.joblib`, partition files
+and old attribution/current caches. They are intentionally not committed. On a
+fresh checkout, first reproduce the four historical revision-study stages below
+using `--output outputs/revision_study` (audit -> baselines -> freeze -> assess),
+or recover the verified local artifacts from `04bf054`. `financepaper download`
+fetches the checksum-pinned Taiwan workbook. No historical artifact is overwritten
+by the validation stage. Polish download is official UCI, checksum pinned and
+automatic in `external-fit`; only `5year.arff` is used.
+
+```bash
+uv sync --frozen --extra temporal
+uv run --frozen --extra temporal financepaper download
+uv run --frozen --extra temporal python scripts/run_decisive_validation.py freeze
+uv run --frozen --extra temporal python scripts/run_decisive_validation.py taiwan
+uv run --frozen --extra temporal python scripts/run_decisive_validation.py external-fit
+# External method/predictors/policies are now hashed and immutable.
+uv run --frozen --extra temporal python scripts/run_decisive_validation.py external-evaluate
+# Time without concurrent training/report processes.
+uv run --frozen --extra temporal python scripts/benchmark_decisive_validation.py
+uv run --frozen --extra temporal python scripts/report_decisive_validation.py
+uv run --frozen --extra temporal python scripts/supplement_decisive_validation.py
+uv run --frozen --extra temporal python scripts/serialize_decisive_validation.py
+uv run --frozen --extra temporal python scripts/audit_decisive_validation.py
+uv run --frozen --extra temporal python scripts/write_decisive_reports.py
+OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 uv run --frozen --extra temporal pytest -q
+```
+
+The default validation directory is `outputs/decisive_validation`; a completed
+external evaluation refuses replacement. Current-only NPZ/JSONL and verification
+truth/labels are separate. Six PNG/PDF figure pairs and tables A–E, all k/tolerance/
+alpha sensitivities, 1000-draw customer-cluster intervals, 280 deterministic cases,
+runtime repetitions and provenance/audit receipts are generated under `analysis/`.
+Every mask/completion of a customer stays in its bootstrap cluster. Polish exact
+duplicates stay in one split and one evaluation cluster, but unknown company
+identities and row-level calibration still prevent entity-level guarantees.
+New validation is CPU-only and ran on Apple M4 Pro, 24 GiB; no CUDA/rented GPU.
+This is a bounded frozen protocol: YAML records the declared constants, while
+the implementation fixes their corresponding grids. It is not a general
+configuration-driven experiment search; changing a definition requires a new
+prospective protocol before evaluation.
+
+## Historical verification-supervised revision study
+
+The previous branch froze the credit predictor and learned when its currently
 observed reasons may need revision. It uses **XGBoost 25-view plus a generic
 calibrated selector**, not a new recurrent architecture. Start with the
 [SOTA comparison](docs/SOTA_COMPARISON_2026.md),
@@ -204,16 +274,24 @@ The proposed target is called **reason-revision risk**.
 
 Source: https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
-### External validation: South German Credit
+### External validation: Polish Companies Bankruptcy, fifth-year cohort
+
+- 5,910 statements; 64 financial ratios; 410 bankruptcy events.
+- Target: corporate bankruptcy within one year, not consumer next-month default.
+- Natural missingness remains unknown; only artificially hidden observed cells
+  are restored. The measured external assessment is 1,182 statements.
+- [Official UCI source](https://archive.ics.uci.edu/dataset/365/polish+companies+bankruptcy+data), CC BY 4.0.
+
+### Earlier proposed robustness dataset: South German Credit
 
 - 1,000 records.
 - Target: good / bad credit.
-- Used only as a secondary credit-risk validation set.
+- Not used in the new decisive validation; retained as an earlier secondary option.
 - The target is **not identical to default payment**, so results are reported separately.
 
 Source: https://archive.ics.uci.edu/dataset/522/south+german+credit
 
-## Minimal model stack
+## Historical broader model plan
 
 - Logistic Regression — additive / interpretable baseline.
 - XGBoost — main nonlinear predictor.
@@ -223,7 +301,11 @@ Source: https://archive.ics.uci.edu/dataset/522/south+german+credit
 - Native-missing XGBoost — baseline that does not require explicit imputation.
 - SHAP — local feature attribution.
 
-Deep learning is **not required** for the first paper version.
+The list above is the original broader plan, not a claim that every item was
+implemented. The current frozen validation uses XGBoost 25-view and train-only
+joint nearest-neighbour donor completions; MICE and native-missing comparisons
+are not new experiments in this phase. Deep learning is **not required** for the
+current explanation-release contribution.
 
 ## High-level pipeline
 
@@ -234,7 +316,7 @@ Artificially hide selected fields
         |
 Observed record + missing mask
         |
-Conditional multiple imputation
+Training-only plausible donor completions
         |
 Several plausible completed records
         |
