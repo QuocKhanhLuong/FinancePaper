@@ -7,6 +7,33 @@ Research repository for:
 Working title; the project is now an **evaluation + selective explanation policy
 study**, not a new credit-classifier architecture paper.
 
+## Large-scale validation: provenance accepted, real experiment not run
+
+The [provenance audit](docs/DATASET_PROVENANCE_AUDIT.md) selects exactly one new
+dataset: **Freddie Mac SFLLD, Standard annual samples, Release 47 (July 2026),
+ACCEPT WITH RESTRICTIONS**. The researcher has not supplied official files. No
+mortgage data were downloaded, no mortgage model was trained, and no large-scale
+result is claimed.
+
+The [frozen decision](docs/LARGE_DATASET_DECISION.md) declares 750,000 source loans
+across 15 vintages, with separate temporal train/development/calibration/test roles.
+Eligible counts remain unknown. The endpoint is observed **90+ DPD in the next
+12 reporting months before termination**, not generic default.
+
+- [Target and censoring](docs/FREDDIE_TARGET_DEFINITION.md), [leakage audit](docs/FREDDIE_LEAKAGE_AUDIT.md), and [data protocol](docs/FREDDIE_DATA_PROTOCOL.md).
+- [Citation and access package](docs/DATASET_CITATION.md), [repository data policy](data/README.md).
+- [Stable-core specification and prior work](docs/STABLE_CORE_EXPLANATION_SPEC.md).
+- [Execution status and remaining gates](docs/LARGE_SCALE_VALIDATION_RESULTS.md).
+
+The offline preparer requires user-acquired official ZIPs and a completed local
+receipt based on `configs/freddie_acquisition.example.json`. It performs no login,
+download or terms acceptance. Start with `--stage pilot`, then `development`;
+`confirmation` refuses assessment access without hashes of fitted artifacts and
+policies. See the protocol for commands. Intake, conditional-completion and
+stable-core primitives have synthetic tests; the mortgage training/evaluation
+runner remains to be integrated after official intake. Historical results below
+are unchanged.
+
 ## Decisive semantic, external and release-policy validation
 
 The [final decision](docs/FINAL_PAPER_DECISION.md) is **continue with a narrowed

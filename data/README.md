@@ -1,5 +1,51 @@
 # Data provenance
 
+## Publication policy
+
+The [2026-10-03 provenance audit](../docs/DATASET_PROVENANCE_AUDIT.md) separates
+legal license permissions from this repository's stricter artifact policy.
+The table answers **CAN this repository commit these artifacts?**
+
+| Dataset | Raw data | Processed rows | Aggregate results | Model artifacts |
+|---|---|---|---|---|
+| Taiwan UCI | NO | NO | YES, with attribution | NO |
+| Polish UCI | NO | NO | YES, with attribution | NO |
+| Freddie SFLLD R47 | NO | NO | YES, reviewed noncommercial, non-identifying, non-reconstructive outputs only | RESTRICTED; no weights/reference banks committed |
+| Rejected large-dataset candidates | NO | NO | NO data-derived experiments authorized | NO |
+
+Taiwan (DOI [10.24432/C55S3H](https://doi.org/10.24432/C55S3H)) and Polish (DOI
+[10.24432/C5F600](https://doi.org/10.24432/C5F600)) are CC BY 4.0: their licenses
+allow attributed sharing/adaptation, but this Git repository excludes row data,
+caches and model artifacts. Preserve original attribution and indicate changes.
+Freddie is governed by provider terms, not Creative Commons. Do not upload loan
+rows or local model/background artifacts to external AI services or mirrors.
+
+## Freddie: user-acquired files only
+
+Official source: [Freddie SFLLD](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset).
+Only Release 47 Standard annual samples are selected. The researcher must register,
+accept applicable terms, manually obtain the exact files, and complete a local
+receipt using `configs/freddie_acquisition.example.json`. An example receipt is
+deliberately invalid until actual access details are supplied. Do not claim to have
+accepted terms on another person's behalf. No download automation is provided.
+
+Run `uv run --frozen python scripts/prepare_freddie.py --help`; follow the
+[staged protocol](../docs/FREDDIE_DATA_PROTOCOL.md). ZIPs remain in a private local
+directory; outputs go under ignored `data/processed/freddie_r47_*`. These include
+private loan identifiers, feature rows, natural masks, targets and detailed intake
+manifests. Nothing is automatically staged or uploaded. Checksums/aggregate metadata
+can be considered for publication after review; no invented expected hashes.
+Do not publish row-level examples, transformed rows, completions, tree weights or
+SHAP backgrounds. A format conversion is not anonymization.
+
+The protocol uses originally observed cells for artificial verification; naturally
+unknown values remain unknown. Target files contain future outcomes and must be
+excluded from preprocessing, completion fitting and serving APIs. See
+[target definition](../docs/FREDDIE_TARGET_DEFINITION.md) and
+[citation/access statement](../docs/DATASET_CITATION.md).
+
+## Taiwan
+
 Run `uv run --frozen financepaper download` from the repository root for Taiwan.
 Loading and tests never fetch data; download entry points are explicit.
 The raw workbook is excluded from Git.

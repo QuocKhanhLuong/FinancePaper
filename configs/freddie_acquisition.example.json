@@ -1,0 +1,14 @@
+{
+  "provider": "Freddie Mac",
+  "release": 47,
+  "release_date": "2026-07-29",
+  "performance_cutoff": "2026-03-31",
+  "schema": "july_2026",
+  "source_url": "https://claritydownload.fmapps.freddiemac.com/",
+  "download_date": null,
+  "researcher_accepted_terms": false,
+  "terms_version": "2025-11-03",
+  "applicable_clickthrough_reviewed": false,
+  "clickthrough_conflicts_with_audit": null,
+  "purpose": "noncommercial academic mortgage credit-performance research"
+}

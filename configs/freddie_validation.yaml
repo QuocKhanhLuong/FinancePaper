@@ -1,0 +1,30 @@
+# Frozen before official raw access; no executable experiment grid.
+release: 47
+release_date: '2026-07-29'
+performance_cutoff: '2026-03-31'
+schema: july_2026
+seed: 20261003
+pilot_years: [2000, 2001]
+roles:
+  train: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008]
+  development: [2011]
+  probability_calibration: [2014]
+  release_calibration: [2017]
+  test: [2020, 2021, 2022]
+expected_source_loans_per_year: 50000
+minimum_labelled_confirmation_loans: 500000
+history_months: 6
+horizon_months: 12
+restart_seeds: [101, 102, 103]
+missingness: [mcar10, mcar30, group_missing]
+completion_k: 8
+reason_k: 2
+reason_minimum: 0.01
+sign_epsilon: 0.000001
+rank_epsilon: 0.000001
+stable_threshold_grid: [0, 0.5, 0.625, 0.75, 0.875, 1]
+risk_targets: [0.05, 0.10, 0.15]
+bootstrap_draws: 1000
+calibration_explanation_loans: 10000
+test_explanation_loans_per_year: 10000
+timing_repetitions: 5
