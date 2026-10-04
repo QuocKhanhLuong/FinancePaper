@@ -5,6 +5,13 @@ The [selection decision](SELECTED_METHOD_DECISION.md) is based on explicit
 reductions and unmet mechanism requirements. The finite-state audit tests the
 reasoning, not which trained architecture wins. Its results cannot supply novelty.
 
+The [completed audit](PILOT_RESULTS.md) passed 14 finite identity/witness checks
+and the repository suite passed 137 tests. Most decisively, self-consistent
+exact integration under a wrong completion law can be worse than a constant
+predictor. This is a synthetic counterexample to sufficiency, not a financial
+benchmark against the cited methods. No new method passed technical-difference
+and necessity gates; no real-data training or confirmation followed.
+
 No direction has both a specified technical difference and evidence of necessity.
 This is not a claim that all future methods in these areas must fail. Current
 components may be useful baselines; combining them would require a new,

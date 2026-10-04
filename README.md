@@ -15,6 +15,14 @@ The supported framing remains evaluation + selective explanation policy, with
 **no established new-algorithm contribution** and ESWA **promising but incomplete**.
 Freddie validation, conformal envelopes and TabM remain NOT RUN.
 
+The [controlled method-pivot audit](docs/method_pivot/SELECTED_METHOD_DECISION.md)
+(2026-10-04, separate `research/method-pivot` branch) reviews four distinct
+directions and 17 nearest-work entries. **No proposed construction passed the
+new-method gate.** The [finite-state checks](docs/method_pivot/PILOT_RESULTS.md)
+show why coherence, reconstruction and exact integration alone do not establish
+prediction validity; they are synthetic checks, not new financial model results.
+Historical experiments and the primary pipeline are unchanged.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
