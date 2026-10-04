@@ -33,6 +33,15 @@ def digest(path):
     return sha256(Path(path).read_bytes()).hexdigest()
 
 
+def csv_boolean(value):
+    normalized = value.strip().lower()
+    if normalized in ("0", "false"):
+        return False
+    if normalized in ("1", "true"):
+        return True
+    raise ValueError(f"Unrecognized CSV boolean: {value!r}")
+
+
 def sigmoid(value):
     if value >= 0:
         return 1 / (1 + math.exp(-value))
@@ -265,7 +274,7 @@ def historical_audit(root):
                 and r["first"] == "mc8" and r["second"] in ("prediction_only", "rank_instability")]
         elif key == "stable_core":
             selected = [r for r in rows if r["target"] == "meaningful" and float(r["alpha"]) == .1
-                        and r["conservative"].lower() == "false" and r["condition"] == "overall"
+                        and not csv_boolean(r["conservative"]) and r["condition"] == "overall"
                         and r["method"] in ("release_all", "stable_both")]
             if len(selected) != 4:
                 raise AssertionError("Expected four aggregate Stable-Core rows")

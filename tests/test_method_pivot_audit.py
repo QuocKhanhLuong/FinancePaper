@@ -83,6 +83,13 @@ def test_corrupt_historical_region_is_rejected(tmp_path):
         audit.historical_audit(tmp_path)
 
 
+@pytest.mark.parametrize("encoded,expected", [("0", False), ("False", False), ("1", True), ("True", True)])
+def test_historical_csv_boolean_contract(encoded, expected):
+    assert audit.csv_boolean(encoded) is expected
+    with pytest.raises(ValueError, match="boolean"):
+        audit.csv_boolean("unknown")
+
+
 def test_artifact_hashes_and_no_overwrite(tmp_path):
     output = tmp_path/"audit.json"
     audit.main(["--output", str(output)])
