@@ -1,0 +1,21 @@
+# Locked baseline audit; no new credit model or method.
+protocol: docs/method_pivot/ROUND4_DEVELOPMENT_PROTOCOL_DRAFT.md
+protocol_commit: 1d49cee
+cache: outputs/decisive_validation/taiwan/fold_0
+partitions: outputs/revision_study/fold_0/partition_ids.json
+partition_sha256: 0fdc5f6abe8409118dec4214d9fd58c7b767b3a0e06fc014fc15e82c869a6454
+predictor: outputs/revision_study/fold_0/predictors.joblib
+predictor_sha256: 16369aa6a254bc7d22fbd55acd8ba7c1987955817ad6180768113e59dc3ba144
+conditions: [mcar10, mcar30, mar30, group_missing]
+fit_count: 400
+seed: 20261005
+bootstrap_draws: 1000
+budget_seconds: 600
+detector:
+  max_iter: 120
+  max_leaf_nodes: 7
+  min_samples_leaf: 40
+  learning_rate: 0.05
+  l2_regularization: 5
+  early_stopping: false
+  random_state: 101
