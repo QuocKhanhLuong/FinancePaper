@@ -40,6 +40,15 @@ methods; none was implemented as a new method.
 It also records a dedicated prediction-stability prior-work baseline that has
 not been run, limiting broad claims about all prediction-only uncertainty methods.
 
+The [fourth-round MVU source audit](docs/method_pivot/ROUND4_MVU_SOURCE_AUDIT.md)
+checks the accepted 2026 prediction-stability method against its official release.
+Independent finite-completion prediction controls and an
+[exact synthetic sanity check](docs/method_pivot/ROUND4_BASELINE_SANITY_RESULTS.md)
+are now implemented: prediction probability can be constant while the largest
+observed attribution changes. This is a correctness/counterexample result,
+not a new method, learned-DMV reproduction or financial confirmation.
+The combined engineering suite has **168 passing tests**.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
