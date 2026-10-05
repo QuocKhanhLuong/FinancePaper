@@ -1,0 +1,24 @@
+protocol: docs/method_pivot/ROUND4_RESTART_PROTOCOL.md
+protocol_commit: 1d49cee
+cache: outputs/decisive_validation/taiwan/fold_1
+partitions: outputs/revision_study/fold_1/partition_ids.json
+partition_sha256: 8c550038fdfe19383a4bcb3893ccef05178085d78d90583a46af8d29cb16ed85
+predictor: outputs/revision_study/fold_1/predictors.joblib
+predictor_sha256: 20ec77f26beb9409a39c394065ca64d39826ebdcd3b0b5a0df2a85d950ef1ce5
+conditions:
+- mcar10
+- mcar30
+- mar30
+- group_missing
+fit_count: 400
+seed: 20261005
+bootstrap_draws: 1000
+budget_seconds: 600
+detector:
+  max_iter: 120
+  max_leaf_nodes: 7
+  min_samples_leaf: 40
+  learning_rate: 0.05
+  l2_regularization: 5
+  early_stopping: false
+  random_state: 102
