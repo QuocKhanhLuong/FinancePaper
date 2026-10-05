@@ -8,6 +8,8 @@ The historical Taiwan/Polish reports, targets and negative results are unchanged
 identified omitted baseline initialization/aggregation time and an input-dtype
 boundary bug outside the tested support. Run 01 is retained; corrected run 02
 must supersede its timing conclusion. Correctness applies to its tested support.
+The [completed corrected report and Fourier control](ROUND2_CORRECTED_RESULTS.md)
+now supersede the numerical timing conclusion below; this original table is retained.
 
 ## What ran
 

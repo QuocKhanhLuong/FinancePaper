@@ -4,7 +4,7 @@
 Date: 2026-10-05. This is a technical reduction decision, not a novelty score
 or a claim that the entire missing-information research problem is solved.
 
-The [pilot](ROUND2_RESULTS.md) passed correctness and found a useful accuracy/cost
+The [corrected pilot](ROUND2_CORRECTED_RESULTS.md) passed correctness and found a useful accuracy/cost
 point. It did **not** fail numerically. The failure is that the currently proposed
 mechanism has not survived the closest-prior reduction:
 
@@ -52,12 +52,24 @@ are unchanged. No new release threshold, revision head, architecture, or renamed
 uncertainty score is introduced. Financial development and confirmation do not
 start on the strength of this numerical result alone.
 
-## One next research action
+## Subsequent executed falsifier
 
-Derive and adversarially audit an observation-dependent structural complexity
-bound for joint response inference against generic circuit integration **before
-any further implementation**. Ordinary ANOVA, control variates, sparse covariance
-or a different basis do not qualify without a precise non-reducible advantage.
-This is a required open theoretical gate, not a promised successful next method.
-If it closes by direct reduction again, do not spend a financial benchmark to
-manufacture a method claim.
+The [Fourier-basis control](ROUND2_CORRECTED_RESULTS.md) subsequently matched
+moments to about 2.7e-15 and ran 6.20× faster in the same fixed workload. This is
+an independent implementation of a known orthogonal-basis calculation, not an
+official FourierSHAP run. It supplies an empirical necessity rejection in
+addition to the algebraic reduction. The candidate passed correctness but lost
+to the stronger simple integration baseline.
+
+The circuit comparison above is conditional: no polynomial-size conversion of
+every overlapping rectangle sum to Khosravi et al.'s deterministic regression
+circuits is asserted. Their compatibility assumptions cannot be omitted. The
+rejection does not rely on an unproved equal-cost circuit conversion; the actual
+same-representation Fourier control is the measured decisive comparator here.
+
+## One next action
+
+Close this construction as a proposed new method and retain both exact operators
+as reusable falsification baselines. A future pivot must supply a different,
+explicit technical gap before code; this result is not a reason to run another
+architecture or change the completion law until the current operator wins.

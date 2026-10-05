@@ -61,7 +61,36 @@ def summarize(run):
     print(summary.to_string(index=False))
 
 
+def summarize_control(control):
+    manifest = json.loads((control/'manifest.json').read_text())
+    for name, expected in manifest['artifact_hashes'].items():
+        if hashlib.sha256((control/name).read_bytes()).hexdigest() != expected:
+            raise ValueError(f'Control artifact hash mismatch: {name}')
+    data = pd.read_csv(control/'measurements.csv').query('repeat >= 0')
+    paired = data.groupby(['seed','world']).agg(
+        rectangle_ms=('rectangle_seconds', lambda s: s.mean()*1000),
+        fourier_ms=('fourier_seconds', lambda s: s.mean()*1000),
+    )
+    paired.to_csv(control/'paired_summary.csv')
+    fig, ax = plt.subplots(figsize=(6, 4), layout='constrained')
+    for (seed, world), row in paired.iterrows():
+        ax.plot([0,1], [row.rectangle_ms, row.fourier_ms], 'o-', label=f'{seed} / {world}')
+    ax.set_xticks([0,1], ['Proposed rectangle moments', 'Known Fourier-basis control'])
+    ax.set_ylabel('Mean query time (ms)')
+    ax.set_ylim(bottom=0)
+    ax.legend(fontsize=7)
+    ax.set_title('Same moment target; fixed four-atom product law\nAdaptation, not official FourierSHAP results')
+    fig.savefig(control/'paired_cost.png', dpi=180)
+    fig.savefig(control/'paired_cost.pdf')
+    plt.close(fig)
+    print(paired.to_string())
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', type=Path, required=True)
-    summarize(parser.parse_args().run)
+    parser.add_argument('--control', type=Path)
+    args = parser.parse_args()
+    summarize(args.run)
+    if args.control is not None:
+        summarize_control(args.control)

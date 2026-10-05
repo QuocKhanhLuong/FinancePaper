@@ -245,3 +245,21 @@ def test_equal_moment_different_sign_actual_attribution_laws():
     np.testing.assert_allclose(results[0].covariance, results[1].covariance, atol=1e-12)
     sign_support = [float(q.weights@(compiler.values(q.points)[:, 0] > 0)) for q in laws]
     np.testing.assert_allclose(sign_support, [.5, .8])
+
+
+@pytest.mark.parametrize('leaves', WORLDS)
+def test_known_fourier_basis_control_against_independent_coalition_oracle(leaves):
+    from financepaper.explanations.moment_baselines import uniform_four_atom_moments
+    compiler = CompiledAttributions(leaves, BACKGROUND)
+    atoms = np.array([-1.5, -.5, .5, 1.5])
+    support = np.array(list(product(atoms, repeat=3)))
+    for pattern in product([False, True], repeat=3):
+        observed = np.array(pattern)
+        x = np.array([.3, -.2, .1])
+        complete = support.copy()
+        complete[:, observed] = x[observed]
+        truth = np.array([coalition_oracle(leaves, BACKGROUND, p) for p in complete])
+        x[~observed] = np.nan
+        result = uniform_four_atom_moments(compiler, x, observed, atoms)
+        np.testing.assert_allclose(result['mean'], truth.mean(axis=0), atol=1e-12)
+        np.testing.assert_allclose(result['covariance'], np.cov(truth.T, bias=True), atol=1e-12)

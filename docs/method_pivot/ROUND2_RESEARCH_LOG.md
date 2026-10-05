@@ -103,3 +103,13 @@ The cost can be quadratic in the number of residual rectangles. A result that is
 exact but slower than direct enumeration or budget-matched TreeSHAP without a
 useful accuracy advantage fails the practical mechanism gate. Independent review
 and a prospective bounded numerical pilot must precede financial development.
+
+## Post-audit execution note
+
+The source table above records the formulation-stage review. Subsequently the
+official MIT WOODELF source was installed locally at a pinned revision for the
+numerical comparison. See the [corrected results](ROUND2_CORRECTED_RESULTS.md)
+for execution and the [final audit](ROUND2_FINAL_AUDIT.md) for receipts. The
+selected operator passed correctness but lost to a standard Fourier-basis moment
+control by 6.20× query time in the fixed workload. No financial development
+followed, and that faster baseline is not claimed as a new method.
