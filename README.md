@@ -23,6 +23,14 @@ show why coherence, reconstruction and exact integration alone do not establish
 prediction validity; they are synthetic checks, not new financial model results.
 Historical experiments and the primary pipeline are unchanged.
 
+The [second-round numerical pivot](docs/method_pivot/ROUND2_RESULTS.md)
+(2026-10-05) implemented exact conditional attribution moments and tested three
+synthetic seeds against official WOODELF-HD. It passed numerical checks and was
+1.95× faster than exact finite enumeration in the declared workload, while small-K
+stock SHAP remained much cheaper. The [method-claim gate remains NO-GO](docs/method_pivot/ROUND2_NEXT_DECISION.md):
+the current operator reduces to established compilation plus moment integration.
+This is a reusable research oracle, not a new financial method or confirmation.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
