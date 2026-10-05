@@ -32,6 +32,14 @@ The [method-claim gate remains NO-GO](docs/method_pivot/ROUND2_NEXT_DECISION.md)
 the operator lacks a necessary advantage over standard moment integration.
 This is a reusable research oracle, not a new financial method or confirmation.
 
+The [third-round observation-process audit](docs/method_pivot/ROUND3_OBSERVATION_PROCESS_AUDIT.md)
+continues the search with coupled missing-pattern inference, audit-based
+task-functional inversion and audit-anchored adaptive acquisition. Their current
+formulations reduce to existing coarsening, representer and policy-evaluation
+methods; none was implemented as a new method.
+It also records a dedicated prediction-stability prior-work baseline that has
+not been run, limiting broad claims about all prediction-only uncertainty methods.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
