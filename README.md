@@ -47,7 +47,18 @@ Independent finite-completion prediction controls and an
 are now implemented: prediction probability can be constant while the largest
 observed attribution changes. This is a correctness/counterexample result,
 not a new method, learned-DMV reproduction or financial confirmation.
-The combined engineering suite has **168 passing tests**.
+The [three-restart baseline audit](docs/method_pivot/ROUND4_PREDICTION_DISTRIBUTION_RESULTS.md)
+now compares all eight completion probabilities plus missing masks against
+explanation evidence on reused development customers. MCAR30 revision AP is
+**.0991 ± .0402** for the prediction-distribution detector, **.5253 ± .0974**
+after adding four explanation statistics, **.6139 ± .1117** for MC8 and
+**.6012 ± .1256** for rank instability (restart mean/sample SD).
+This supports incremental explanation information under the tested controls;
+it is not independent confirmation, a DMV reproduction, or a new method.
+The [round-four decision](docs/method_pivot/ROUND4_NEXT_DECISION.md) keeps both
+new constructions at NO-GO for a method claim. The combined engineering suite
+has **181 passing tests**. See the [AGY review receipt](docs/method_pivot/ROUND4_ORCHESTRATION_REVIEW_RECEIPT.md)
+for worker contributions and coordinator corrections.
 
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
