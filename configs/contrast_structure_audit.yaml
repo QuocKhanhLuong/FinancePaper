@@ -1,4 +1,5 @@
 protocol: docs/method_pivot/ROUND6_STRUCTURAL_PROTOCOL.md
+amendment: docs/method_pivot/ROUND6_PREFLIGHT_INCIDENT.md
 predictor: outputs/revision_study/fold_0/predictors.joblib
 predictor_sha256: 16369aa6a254bc7d22fbd55acd8ba7c1987955817ad6180768113e59dc3ba144
 partitions: outputs/revision_study/fold_0/partition_ids.json
@@ -21,4 +22,4 @@ max_terms: 100000
 primary: mcar30
 minimum_eligible: 16
 union_ratio_gate: 0.75
-output: outputs/method_pivot/round6/structural
+output: outputs/method_pivot/round6/structural_amended
