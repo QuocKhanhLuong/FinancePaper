@@ -70,6 +70,20 @@ financial model. No financial records were evaluated in this round. The combined
 suite now has **201 passing tests**; [the next gate](docs/method_pivot/ROUND5_NEXT_DECISION.md)
 requires a structural advantage over the same generic projected representation.
 
+The [sixth-round structural audit](docs/method_pivot/ROUND6_STRUCTURAL_RESULTS.md)
+(2026-10-06) ran frozen XGB25 on **32 reused development customers × four
+conditions**. Ordinary conditioning helps, but the contrast/group rectangle
+union ratio is **1.00 in all 98 eligible episodes**. Retaining a candidate sign
+and all competitor differences is injective, so this particular union-reduction
+screen was impossible by construction; it does not test every event solver.
+All 784 eligible completion events match the frozen reference. The
+[decision closes generic contrast projection as a new-method direction](docs/method_pivot/ROUND6_NEXT_DECISION.md).
+A [preflight encoding error and narrow amendment](docs/method_pivot/ROUND6_PREFLIGHT_INCIDENT.md)
+and [AGY review corrections](docs/method_pivot/ROUND6_ORCHESTRATION_REVIEW_RECEIPT.md)
+are retained. Historical financial outcomes were not rerun or changed.
+The final combined suite has **218 passing tests**; interrupted-run and final
+logs are distinguished in the report.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work

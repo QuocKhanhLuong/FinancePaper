@@ -98,6 +98,25 @@ def test_tied_outsider_is_not_automatically_revision():
     assert contrast_projection([0., .001, .002], np.ones(3, bool)) is None
 
 
+@pytest.mark.parametrize("available", [np.ones(3, bool), np.ones(8, bool),
+                                     np.array([True, False, True, False, True, False, False, False])])
+def test_sign_plus_all_contrasts_cannot_remove_nonzero_union_terms(available):
+    # Post-run algebraic diagnostic, not a revised headroom criterion: the
+    # anchor sign plus all differences reconstruct every available group.
+    n = len(available)
+    projection, candidates, _ = contrast_projection(np.arange(1., n+1.), available)
+    c = np.random.default_rng(20261006).integers(-3, 4, size=(20, n)).astype(float)
+    c[:, ~available] = 0
+    c[0] = 0
+    q = c @ projection
+    np.testing.assert_array_equal(np.any(q != 0, axis=1), np.any(c != 0, axis=1))
+    assert np.linalg.matrix_rank(projection[available]) == int(available.sum())
+    anchor = candidates[0]
+    np.testing.assert_array_equal(q[:, 0], c[:, anchor])
+    for offset, h in enumerate(h for h in np.flatnonzero(available) if h != anchor):
+        np.testing.assert_array_equal(q[:, 2+offset]+q[:, 0], c[:, h])
+
+
 def test_term_graph_width_is_only_a_structural_diagnostic():
     assert graph_summary([{0, 1}, {1, 2}])["min_fill_width_upper"] == 1
     assert graph_summary([{0, 1, 2}])["min_fill_width_upper"] == 2

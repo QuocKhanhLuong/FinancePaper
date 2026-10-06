@@ -55,7 +55,8 @@ def run(cfg, output):
     if len(chosen) != cfg["customers"]:
         raise ValueError("Insufficient fixed development cohort")
     # This trusted local artifact is hash-checked before deserialization. No new
-    # raw dataset, outcome array, restored input or outer cache is accessed.
+    # raw dataset, restored input or outer cache is accessed. The legacy bundle
+    # contains outcome objects on deserialization; none is used by this audit.
     bundle = joblib.load(cfg["predictor"])
     model = bundle["fits"]["xgb25"]["model"]
     prep = bundle["context"]["preprocessor"]
