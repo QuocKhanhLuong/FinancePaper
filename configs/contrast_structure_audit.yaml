@@ -1,0 +1,24 @@
+protocol: docs/method_pivot/ROUND6_STRUCTURAL_PROTOCOL.md
+predictor: outputs/revision_study/fold_0/predictors.joblib
+predictor_sha256: 16369aa6a254bc7d22fbd55acd8ba7c1987955817ad6180768113e59dc3ba144
+partitions: outputs/revision_study/fold_0/partition_ids.json
+partition_sha256: 0fdc5f6abe8409118dec4214d9fd58c7b767b3a0e06fc014fc15e82c869a6454
+cache: outputs/decisive_validation/taiwan/fold_0/revision_calibration
+current_sha256:
+  mcar10: e4fd05d9225249c40cbeaeea038531fd756bdd85cf59e41111debe87afbf5c82
+  mcar30: 6ac796eedf12c3345f92de6a6f6872e7d5df5ec1c50fd2ae687a251b62f8e214
+  mar30: 90b3abc5f89c1ee444564ccfb31ab6e68ca59493ff01d768b333866b6f85b375
+  group_missing: 784a484d53874a333e41540b53c07f3f2bec77f3ac9a49578358cbe6a8b6c65e
+conditions: [mcar10, mcar30, mar30, group_missing]
+seed: 20261006
+customers: 32
+completion_draws: 8
+timed_customers: 8
+timing_repetitions: 5
+budget_seconds: 600
+max_rss_gib: 4
+max_terms: 100000
+primary: mcar30
+minimum_eligible: 16
+union_ratio_gate: 0.75
+output: outputs/method_pivot/round6/structural
