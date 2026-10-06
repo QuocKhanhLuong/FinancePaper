@@ -60,6 +60,16 @@ new constructions at NO-GO for a method claim. The combined engineering suite
 has **181 passing tests**. See the [AGY review receipt](docs/method_pivot/ROUND4_ORCHESTRATION_REVIEW_RECEIPT.md)
 for worker contributions and coordinator corrections.
 
+The [fifth-round direct-rank audit](docs/method_pivot/ROUND5_RANK_INFERENCE_AUDIT.md)
+(2026-10-06) compares the next inference direction with TopShap, statistical
+ranking tests and weighted model integration. Its [exact synthetic falsifier](docs/method_pivot/ROUND5_RANK_INFERENCE_RESULTS.md)
+has identical attribution means/covariances but **50% versus 20%** revision risk;
+rank instability still distinguishes the cases. Generic contrast projection plus
+event integration is **NO-GO for a new-method claim**, not an empirically failed
+financial model. No financial records were evaluated in this round. The combined
+suite now has **201 passing tests**; [the next gate](docs/method_pivot/ROUND5_NEXT_DECISION.md)
+requires a structural advantage over the same generic projected representation.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
