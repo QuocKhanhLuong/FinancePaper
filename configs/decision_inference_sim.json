@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "seed": 20261007,
+  "replicates": 1000,
+  "bootstrap_draws": 499,
+  "chunk_size": 50,
+  "alpha": 0.05,
+  "minimum_finite_bootstrap_fraction": 0.99,
+  "designs": [
+    {"reviewers": 16, "cases": 16},
+    {"reviewers": 48, "cases": 32},
+    {"reviewers": 96, "cases": 64}
+  ],
+  "marginal_effects": [0.0, 0.05, 0.10],
+  "stratum_logits": [-0.3, -0.1, 0.1, 0.3],
+  "profiles": [
+    {"name": "iid", "baseline": 0.60, "reviewer_sd": 0.0, "case_sd": 0.0, "reviewer_slope_sd": 0.0, "case_slope_sd": 0.0, "reviewer_dropout": 0.0, "item_missing": 0.0},
+    {"name": "intercepts", "baseline": 0.60, "reviewer_sd": 0.7, "case_sd": 0.7, "reviewer_slope_sd": 0.0, "case_slope_sd": 0.0, "reviewer_dropout": 0.0, "item_missing": 0.0},
+    {"name": "slopes_missing", "baseline": 0.60, "reviewer_sd": 0.7, "case_sd": 0.7, "reviewer_slope_sd": 0.5, "case_slope_sd": 0.5, "reviewer_dropout": 0.1, "item_missing": 0.1},
+    {"name": "high_baseline", "baseline": 0.75, "reviewer_sd": 0.7, "case_sd": 0.7, "reviewer_slope_sd": 0.5, "case_slope_sd": 0.5, "reviewer_dropout": 0.1, "item_missing": 0.1}
+  ],
+  "diagnostic_gates": {"null_rejection_wilson_upper_max": 0.075, "invalid_fraction_max": 0.01, "conservative_null_rejection_below": 0.025},
+  "scope": "ASSUMPTION_ONLY_METHOD_FEASIBILITY_NOT_HUMAN_EVIDENCE_NOT_SAMPLE_SIZE_JUSTIFICATION"
+}

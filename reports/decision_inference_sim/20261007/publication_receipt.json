@@ -1,0 +1,14 @@
+{
+  "copied_utc": "2026-10-07T16:32:42.490347+00:00",
+  "outputs": {
+    "reports/decision_inference_sim/20261007/RESULTS.md": "179d9024b4ebd0f1345cb31280b0044c7eb72acae1beb535ac5218685f0bbbce",
+    "reports/decision_inference_sim/20261007/calibration.csv": "7ddb2564122ceadb7cf7eac14b91c6327d7556c923bf69809166c90130f48881",
+    "reports/decision_inference_sim/20261007/execution_receipt.json": "055c287aad44adb51814fcd1036ddc0944e0bf6934b12f1cc9b6d5ae0e538a64",
+    "reports/decision_inference_sim/20261007/null_gates.csv": "c6f15de423b40a262aab00201a3ae82b283d1ce142e5dde60774584b4f5d5618",
+    "reports/decision_inference_sim/20261007/rejection_rates.pdf": "136977cffd90da474141e2ad0f7767776fa40bdd6d6f71d7171b084089cab4df",
+    "reports/decision_inference_sim/20261007/rejection_rates.png": "a55a204a95d16bedc34d92fd628f69d46a07b64f2579dff4175380c45d4281d9",
+    "reports/decision_inference_sim/20261007/scenario_summary.csv": "a3dfb472a02563226c54fb767205a44fdff54c318f83881732433dacaa36f75f"
+  },
+  "scope": "AGGREGATE_ASSUMPTION_ONLY_SIMULATION",
+  "source_run": "runs/decision_value_pilot/inference_20261007T162910Z"
+}

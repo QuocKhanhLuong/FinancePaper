@@ -1,0 +1,83 @@
+{
+  "aggregate_denominators_independently_rechecked": true,
+  "all_source_hashes_verified": true,
+  "bootstrap_draws_per_trial": 499,
+  "chunk_hashes_verified": 720,
+  "development_test_failure": {
+    "description": "First targeted run: 9 passed, 1 failed because fixture subprocess stub also intercepted platform detection; scoped the stub to git.",
+    "status": "FIXED_BEFORE_SCIENTIFIC_RUN"
+  },
+  "earlier_attempt": {
+    "error": "Wilson endpoint roundoff at zero made a negative matplotlib yerr",
+    "identical_per_replicate_csv_hashes": 720,
+    "note": "The repeated 36,000 trials are not independent confirmation; first attempt remains preserved locally.",
+    "physical_trials_executed_across_both_attempts": 72000,
+    "repair": "Clamp Wilson endpoints to contain the MLE exactly; added boundary and PNG/PDF regression checks",
+    "repeated_trials_not_pooled": true,
+    "run": "runs/decision_value_pilot/inference_20261007T162502Z",
+    "same_frozen_config_and_seeds": true,
+    "status": "ALL_TRIALS_COMPLETE_BUT_PLOTTING_FAILED"
+  },
+  "evidence": "ACTUALLY_EXECUTED_SOFTWARE_AND_ASSUMPTION_SIMULATION",
+  "expert_approval": "PENDING",
+  "final_sample_size": "NOT_SELECTED",
+  "findings": {
+    "bootstrap_96_reviewers_64_cases_assumed_5pp_power_range": [
+      0.264,
+      0.373
+    ],
+    "bootstrap_conservative_settings": 12,
+    "bootstrap_null_screens_pass": 10,
+    "bootstrap_null_small_missing_invalid_fractions": [
+      {
+        "invalid_fraction": 0.3269999999999999,
+        "profile": "slopes_missing"
+      },
+      {
+        "invalid_fraction": 0.3469999999999999,
+        "profile": "high_baseline"
+      }
+    ],
+    "naive_null_screens_pass": 6,
+    "total_null_settings": 12
+  },
+  "human_study": "NOT_RUN",
+  "independent_adaptive_quadrature_checks": 72,
+  "independent_quadrature_max_abs_error": 2.886579864025407e-15,
+  "preserved": {
+    "historical_configs_results_and_lockfile_unchanged": true,
+    "local_main": "e7cac089d98500ac57771d419dff46804ced52c3",
+    "parent": "f5ae1de5708a5c118cceff8dd04e25c62d59a551",
+    "remote_main_read_only_verified": "e7cac089d98500ac57771d419dff46804ced52c3",
+    "tracked_parent_files_unchanged": true
+  },
+  "primary_glmm": "NOT_RUN",
+  "resumed_after_real_pause_at_trial": 50,
+  "run": "runs/decision_value_pilot/inference_20261007T162910Z",
+  "scenario_method_rows": 72,
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "device": "cpu",
+    "elapsed_seconds": 24.192685999907553,
+    "exit_code": 0,
+    "log": "runs/decision_value_pilot/inference_20261007T162910Z/pytest_full.log",
+    "log_sha256": "2f225022d8d092c25f7e7295ec1aa325fe56083fb8c31ee2e8a6e96497a82cb8",
+    "passed": 149,
+    "skip_reason": "MPS hardware unavailable",
+    "skipped": 1,
+    "warnings": 3,
+    "warnings_scope": "existing SHAP matplotlib deprecations"
+  },
+  "unique_outer_trials": 36000,
+  "validation_script_sha256": "ad5142d348065ce462dbff419ef1595120624448aa51232fbdae7e05d6650b4f",
+  "verified_utc": "2026-10-07T16:33:55.601266+00:00",
+  "figure_visual_review": {
+    "status": "INSPECTED_PNG",
+    "checks": [
+      "four panels and six legend series visible",
+      "axis and Monte Carlo interval labels readable",
+      "no cropped title or legend"
+    ],
+    "pdf": "exported and regression-checked; not separately visually inspected"
+  }
+}
