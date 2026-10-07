@@ -1,0 +1,81 @@
+dataset,condition,method,valid_lost,failures_avoided,c_over_b,interpretation
+polish,mcar10,release_all,0,0,,identical gross utility at every ratio
+polish,mcar10,top1,2429,78,31.141025641025642,policy wins strictly above ratio before unknown compute/delay
+polish,mcar10,mask_warning,0,0,,identical gross utility at every ratio
+polish,mcar10,whole_mc1,2429,78,31.141025641025642,policy wins strictly above ratio before unknown compute/delay
+polish,mcar10,whole_mc2,1702,65,26.184615384615384,policy wins strictly above ratio before unknown compute/delay
+polish,mcar10,whole_mc_all,0,0,,identical gross utility at every ratio
+polish,mcar10,rank,0,0,,identical gross utility at every ratio
+polish,mcar10,stable_donor,43,69,0.6231884057971014,policy wins strictly above ratio before unknown compute/delay
+polish,mcar10,stable_conditional,65,75,0.8666666666666667,policy wins strictly above ratio before unknown compute/delay
+polish,mcar10,stable_both,77,78,0.9871794871794872,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,release_all,0,0,,identical gross utility at every ratio
+polish,mcar30,top1,2195,172,12.761627906976743,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,mask_warning,0,0,,identical gross utility at every ratio
+polish,mcar30,whole_mc1,2195,172,12.761627906976743,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,whole_mc2,1484,139,10.676258992805755,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,whole_mc_all,0,0,,identical gross utility at every ratio
+polish,mcar30,rank,0,0,,identical gross utility at every ratio
+polish,mcar30,stable_donor,94,172,0.5465116279069767,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,stable_conditional,145,175,0.8285714285714286,policy wins strictly above ratio before unknown compute/delay
+polish,mcar30,stable_both,177,183,0.9672131147540983,policy wins strictly above ratio before unknown compute/delay
+polish,overall,release_all,0,0,,identical gross utility at every ratio
+polish,overall,top1,4624,250,18.496,policy wins strictly above ratio before unknown compute/delay
+polish,overall,mask_warning,0,0,,identical gross utility at every ratio
+polish,overall,whole_mc1,4624,250,18.496,policy wins strictly above ratio before unknown compute/delay
+polish,overall,whole_mc2,3186,204,15.617647058823529,policy wins strictly above ratio before unknown compute/delay
+polish,overall,whole_mc_all,0,0,,identical gross utility at every ratio
+polish,overall,rank,0,0,,identical gross utility at every ratio
+polish,overall,stable_donor,137,241,0.5684647302904564,policy wins strictly above ratio before unknown compute/delay
+polish,overall,stable_conditional,210,250,0.84,policy wins strictly above ratio before unknown compute/delay
+polish,overall,stable_both,254,261,0.9731800766283525,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,release_all,0,0,,identical gross utility at every ratio
+taiwan,group_missing,top1,3116,130,23.96923076923077,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,mask_warning,0,0,,identical gross utility at every ratio
+taiwan,group_missing,whole_mc1,3116,130,23.96923076923077,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,whole_mc2,1904,92,20.695652173913043,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,whole_mc_all,0,0,,identical gross utility at every ratio
+taiwan,group_missing,rank,0,0,,identical gross utility at every ratio
+taiwan,group_missing,stable_donor,156,130,1.2,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,stable_conditional,197,111,1.7747747747747749,policy wins strictly above ratio before unknown compute/delay
+taiwan,group_missing,stable_both,275,139,1.9784172661870503,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,release_all,0,0,,identical gross utility at every ratio
+taiwan,mar30,top1,3027,128,23.6484375,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,mask_warning,0,0,,identical gross utility at every ratio
+taiwan,mar30,whole_mc1,3027,128,23.6484375,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,whole_mc2,1867,97,19.24742268041237,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,whole_mc_all,0,0,,identical gross utility at every ratio
+taiwan,mar30,rank,0,0,,identical gross utility at every ratio
+taiwan,mar30,stable_donor,153,123,1.2439024390243902,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,stable_conditional,218,127,1.7165354330708662,policy wins strictly above ratio before unknown compute/delay
+taiwan,mar30,stable_both,263,137,1.9197080291970803,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,release_all,0,0,,identical gross utility at every ratio
+taiwan,mcar10,top1,3647,77,47.36363636363637,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,mask_warning,0,0,,identical gross utility at every ratio
+taiwan,mcar10,whole_mc1,3647,77,47.36363636363637,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,whole_mc2,2235,65,34.38461538461539,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,whole_mc_all,0,0,,identical gross utility at every ratio
+taiwan,mcar10,rank,0,0,,identical gross utility at every ratio
+taiwan,mcar10,stable_donor,58,77,0.7532467532467533,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,stable_conditional,83,81,1.0246913580246915,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar10,stable_both,101,85,1.188235294117647,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,release_all,0,0,,identical gross utility at every ratio
+taiwan,mcar30,top1,2851,127,22.448818897637796,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,mask_warning,0,0,,identical gross utility at every ratio
+taiwan,mcar30,whole_mc1,2851,127,22.448818897637796,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,whole_mc2,1824,88,20.727272727272727,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,whole_mc_all,0,0,,identical gross utility at every ratio
+taiwan,mcar30,rank,0,0,,identical gross utility at every ratio
+taiwan,mcar30,stable_donor,143,123,1.1626016260162602,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,stable_conditional,215,133,1.6165413533834587,policy wins strictly above ratio before unknown compute/delay
+taiwan,mcar30,stable_both,254,144,1.7638888888888888,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,release_all,0,0,,identical gross utility at every ratio
+taiwan,overall,top1,12641,462,27.361471861471863,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,mask_warning,0,0,,identical gross utility at every ratio
+taiwan,overall,whole_mc1,12641,462,27.361471861471863,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,whole_mc2,7830,342,22.894736842105264,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,whole_mc_all,0,0,,identical gross utility at every ratio
+taiwan,overall,rank,0,0,,identical gross utility at every ratio
+taiwan,overall,stable_donor,510,453,1.1258278145695364,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,stable_conditional,713,452,1.5774336283185841,policy wins strictly above ratio before unknown compute/delay
+taiwan,overall,stable_both,893,505,1.7683168316831683,policy wins strictly above ratio before unknown compute/delay

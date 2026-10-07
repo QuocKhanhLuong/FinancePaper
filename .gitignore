@@ -26,3 +26,4 @@ data/processed/*
 *.pt
 *.pth
 .orchestration/
+/runs/decision_value_pilot/

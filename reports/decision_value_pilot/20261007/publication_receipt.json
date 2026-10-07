@@ -1,0 +1,50 @@
+{
+  "artifacts": {
+    "RESULTS.md": "2129b1482ced2e4653f394bd193e1f7724e9d034fe0e70960bb7a362c65bc14f",
+    "utility_break_even.csv": "b173d2832e312470ee240ce69ea08219269975d0faef165026ef1678f6d86267",
+    "utility_counts.csv": "756aa7249449365cd78bd739acbbb310345bc26db282ca0ac550e208d73bdf3b",
+    "utility_frontier.pdf": "3b7e3093393c4ad1708a4f9be2d0443422bd0b340d988ccbc2af34d5d7400e1d",
+    "utility_frontier.png": "fcbc0ffa521ef248de49dd699e1dd43e2537083387d7fa1bf12f586abff1ebc9",
+    "utility_grid.csv": "51fc7aba21a574f791026fe1c898171648ea16318c1a337f5ea052bd4e6e3eda",
+    "utility_polish_counts.csv": "10ca3247f11feab00599cf8e54911816103e26a5aaf3aed337a695eaa3a442f8",
+    "utility_polish_grid.csv": "06772dcefe393bca7437b16684e0052709dee03811e82f5016fac8bc2eee4cf2",
+    "utility_polish_reconciliation.csv": "f5a433eb1952f58a517b251cf910cbda88a4f9511c551263b00d201f6221c52b",
+    "utility_polish_whole_explanation.csv": "f08f1c3178c98f64718dd68e0cb11ca480d311e459ea1f89f8e239356195016e",
+    "utility_taiwan_counts.csv": "9c27bbbda5d4a3af5301a9032cec07da0328027498a4a73104a5b7bfaf398b79",
+    "utility_taiwan_grid.csv": "d71b05e2ca552604ec4bca6abb8be4fb6a9d5a2f2a4bd24eec4f78d3dbe2ab17",
+    "utility_taiwan_reconciliation.csv": "e43d1471d9147346ed1693677f654ecc08861737a099c86b4b9a03596f0a4535",
+    "utility_taiwan_whole_explanation.csv": "acb97c6dc95bff05fc5ea059c42dc3c089e5e4f657c6c95f3f0426c5cfe1acfd"
+  },
+  "base_git_head": "e7cac089d98500ac57771d419dff46804ced52c3",
+  "baseline_test_receipt_sha256": "a70605bc73000404edd8e2abf0b9e263e95769a46c2fadbaa7456b4a6e1c91e5",
+  "branch": "research/astra-next-run-20261007",
+  "input_files_verified": 108,
+  "manifest_sha256": "01631bda5f39805b66634a1c357de0b9c9adf283de0c6cbddcf5ef2ecc35e048",
+  "provenance_path_fix_sha256": "05ef930af3a35299e26983c999b09d439d978ee874b10dc9be2610f98a122925",
+  "report_writer_sha256": "d1af252daad59fd8343fc976f070d34c0a0440ac886a589eb2e42e6e7314c978",
+  "run": "runs/decision_value_pilot/20261007T151716Z",
+  "sources": {
+    "/Users/alvinluong/FinancePaper/scripts/run_decision_value_pilot.py": "8f2e6a4fe90e6310d0fe42e971c6eda6a493a4e686893efc86f1dad4b8c39be1",
+    "configs/decision_value_pilot.json": "340a9c409f61f850f58adeb2649685455db86a1aee129d3ba2c26b4085b9682e",
+    "docs/DECISION_VALUE_PROTOCOL.md": "caed86937bf4bae17184d2f6b3715d501a3476a9f550598baab00b434bb9ba16",
+    "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+    "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+    "src/financepaper/evaluation/decision_vignettes.py": "78c9e2c6a5d462826e317f6d7c34b8184ad39451d99aa69c2272bfb37931adc0",
+    "src/financepaper/reliability/reason_sets.py": "71cb63606a4fc99a9a5fb15fecfc1b49a03db84c313a61920c56b91fef76d4ff",
+    "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+  },
+  "status": "F0_REPRODUCED_F1_F2_PREPARED_HUMAN_NOT_RUN",
+  "test_code_sha256": "2a6ce4094f889352ddef71e67d66a99acfe01a4b48a85199770eabad4ff4a708",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q after frozen lockfile sync; pre-existing extras restored",
+    "device": "cpu",
+    "elapsed_seconds": 22.08517108298838,
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "passed": 128,
+    "skipped": 1,
+    "tests": 129,
+    "uv_lock_sha256": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+  }
+}

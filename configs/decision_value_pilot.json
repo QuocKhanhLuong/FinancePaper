@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source_root": "outputs/stable_core_study",
+  "historical_root": "outputs/decisive_validation",
+  "alpha": 0.1,
+  "conservative": false,
+  "target": "meaningful",
+  "methods": ["release_all", "top1", "mask_warning", "whole_mc1", "whole_mc2", "whole_mc_all", "rank", "stable_donor", "stable_conditional", "stable_both"],
+  "cost_ratios": [0, 0.5, 1, 2, 5, 10],
+  "bootstrap_draws": 1000,
+  "seed": 20261007,
+  "benefit_valid_reason": 1,
+  "compute_cost": "UNKNOWN_NOT_SUBTRACTED",
+  "delay_cost": "UNKNOWN_NOT_SUBTRACTED",
+  "evidence_scope": "exploratory reuse of inspected assessment artifacts; fixed historical alpha=0.1, not policy selection",
+  "datasets": {
+    "taiwan": {"folds": [0, 1, 2], "conditions": ["mcar10", "mcar30", "mar30", "group_missing"]},
+    "polish": {"folds": [0], "conditions": ["mcar10", "mcar30"]}
+  }
+}

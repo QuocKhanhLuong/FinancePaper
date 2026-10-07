@@ -41,8 +41,8 @@ def source_hashes():
     root = Path(__file__).resolve().parents[3]
     files = list((root / "src/financepaper").rglob("*.py")) + [root / x for x in (
         "scripts/run_robustness_followup.py", "configs/robustness_followup.yaml",
-        "configs/temporal_pilot.yaml", "docs/ROBUSTNESS_FOLLOWUP_PROTOCOL.md",
-        "docs/TEMPORAL_MODEL_SPEC.md", "pyproject.toml", "uv.lock")]
+        "configs/temporal_pilot.yaml", "archive/20261007/docs/ROBUSTNESS_FOLLOWUP_PROTOCOL.md",
+        "archive/20261007/docs/TEMPORAL_MODEL_SPEC.md", "pyproject.toml", "uv.lock")]
     return {str(f.relative_to(root)): _digest(f) for f in sorted(files)}
 
 
