@@ -79,5 +79,15 @@
       "no cropped title or legend"
     ],
     "pdf": "exported and regression-checked; not separately visually inspected"
+  },
+  "publication_verification": {
+    "verified_utc": "2026-10-07T17:07:18.327806+00:00",
+    "published_result_commit": "f41239de8e30b6ef240a5ac53c889e6b9dba36b3",
+    "branch": "research/decision-value-inference-sim-20261007",
+    "git_push_exit_code": 0,
+    "ls_remote_result_commit_matches": true,
+    "remote_main_unchanged": "e7cac089d98500ac57771d419dff46804ced52c3",
+    "source_and_aggregate_hashes_verified_after_commit": true,
+    "note": "This metadata receipt is committed after the verified result commit; no scientific output was changed."
   }
 }
