@@ -84,6 +84,19 @@ are retained. Historical financial outcomes were not rerun or changed.
 The final combined suite has **218 passing tests**; interrupted-run and final
 logs are distinguished in the report.
 
+The [seventh-round broader search](docs/method_pivot/ROUND7_CANDIDATE_DIRECTIONS.md)
+(2026-10-07) uses two independent AGY reports and coordinator-guided review to
+examine verification-anchored learning, audit allocation, sensitivity inference
+and limited-observation interaction learning. The [registered finite audit](docs/method_pivot/ROUND7_FALSIFICATION_RESULTS.md)
+finds exact AIPW reduction, an erroneous joint-training variance penalty and a
+false ANY/ALL-competitor advantage. **No supplied construction passes the
+method gate**; this is not a claim that all future combinations are impossible.
+The [next gate](docs/method_pivot/ROUND7_NEXT_DECISION.md) concerns finite-budget
+headroom against conditional-moment learning. There was no new financial run;
+the combined engineering suite has **228 passing tests**. [Worker corrections
+and real orchestration receipt](docs/method_pivot/ROUND7_ORCHESTRATION_REVIEW_RECEIPT.md)
+are retained rather than promoting unsupported worker claims to results.
+
 The [2026-10-04 conformal-envelope novelty audit](docs/CONFORMAL_EXPLANATION_NOVELTY_AUDIT.md)
 is **NO-GO for a new-method claim on the current specification**. Existing
 multilabel conformal methods already construct inner/outer sets, and prior work
