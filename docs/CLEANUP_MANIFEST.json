@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-07",
+  "kind": "documentation_consolidation_no_new_experiment",
+  "base_commit": "95773c74f757be9b99afbccb48bcd9d17fd305d7",
+  "backup_branch": "archive/pre-consolidation-20261007",
+  "archive_docs_tree_sha": "367ee1c9bfd59b8bbc79b647cae658765f06a293",
+  "preserve_exact": ["src/", "scripts/", "tests/", "configs/", "pyproject.toml", "uv.lock", ".python-version", ".gitignore"],
+  "moves": {"docs/": "archive/20261007/docs/", "README.md": "archive/20261007/README.md", "data/README.md": "archive/20261007/data/README.md"},
+  "active_entry": "docs/RESEARCH_STATE.md",
+  "next_task": "F0 utility audit and independent-outcome human-study preparation",
+  "not_done": ["new_training", "human_study", "Freddie_validation", "new_algorithm_claim"],
+  "history_rewritten": false,
+  "test_suite_rerun_in_this_update": false
+}
