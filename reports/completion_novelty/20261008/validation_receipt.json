@@ -75,8 +75,13 @@
   "publication": {
     "force_push": "NOT_RUN",
     "main_merge": "NOT_RUN",
+    "note": "This metadata receipt follows the verified source commit; final receipt-commit SHA is verified in the session handoff.",
     "remote": "origin",
-    "status": "PRECOMMIT_VALIDATION"
+    "remote_branch": "refs/heads/research/decision-value-novelty-20261008",
+    "remote_main": "e7cac089d98500ac57771d419dff46804ced52c3",
+    "source_commit": "da7583e4cb437e4cc30869094c78c20e443f2001",
+    "status": "SOURCE_COMMIT_PUSHED_AND_REMOTE_VERIFIED",
+    "verified_utc": "2026-10-07T18:51:17.643079+00:00"
   },
   "resume_and_guard_checks": [
     {

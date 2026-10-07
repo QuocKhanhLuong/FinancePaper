@@ -16,7 +16,7 @@
     "reports/completion_novelty/20261008/sharp_bounds.png": "c505cd25ce20fe839bed46d84e2d0152fd356552bdd46c507e62e162a834456a",
     "reports/completion_novelty/20261008/sharp_tree.csv": "7ff99b822ed5a0d504bbab322400264475137d3b7bf12b66f96c7e745aa3f45d",
     "reports/completion_novelty/20261008/tail.csv": "4886307625250b4fe1aa80963b61e9e011214f8095c673bdd9776f9cea4d3d04",
-    "reports/completion_novelty/20261008/validation_receipt.json": "7a6d173bd6b9f43bf8ea5df618220f17b83201d7bb52d9486ecceb3894b30759"
+    "reports/completion_novelty/20261008/validation_receipt.json": "9061f5140beef3d3991d4c51e0eda97ab2990a29d19d1608012368312cedca73"
   },
   "reporter_sha256": "d1daa5f8ecdaa3797fe0c2da45ba2b953d5568fb51fa4639a4bf0c7946947294",
   "scope": "SYNTHETIC_MATHEMATICAL_AUDIT_NOT_HUMAN_OR_FINANCIAL_EVIDENCE",
