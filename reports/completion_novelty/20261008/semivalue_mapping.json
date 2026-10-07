@@ -1,0 +1,51 @@
+[
+  {
+    "m": 2,
+    "normalizer": "3",
+    "khintchine": "4/3",
+    "sharp_contrast": "1/2",
+    "exact_match": true
+  },
+  {
+    "m": 3,
+    "normalizer": "15/4",
+    "khintchine": "16/5",
+    "sharp_contrast": "3/2",
+    "exact_match": true
+  },
+  {
+    "m": 4,
+    "normalizer": "35/8",
+    "khintchine": "192/35",
+    "sharp_contrast": "3",
+    "exact_match": true
+  },
+  {
+    "m": 5,
+    "normalizer": "59/12",
+    "khintchine": "480/59",
+    "sharp_contrast": "5",
+    "exact_match": true
+  },
+  {
+    "m": 6,
+    "normalizer": "259/48",
+    "khintchine": "2880/259",
+    "sharp_contrast": "15/2",
+    "exact_match": true
+  },
+  {
+    "m": 7,
+    "normalizer": "2237/384",
+    "khintchine": "32256/2237",
+    "sharp_contrast": "21/2",
+    "exact_match": true
+  },
+  {
+    "m": 8,
+    "normalizer": "1591/256",
+    "khintchine": "28672/1591",
+    "sharp_contrast": "14",
+    "exact_match": true
+  }
+]

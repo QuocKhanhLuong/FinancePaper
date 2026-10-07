@@ -1,0 +1,4 @@
+stage,states,capacity,dp_count,formula_error,hidden,probability,sign_count
+tail,256,35,128,0,8,0.5,128
+tail,4096,48,2003,0,12,0.489013671875,2003
+tail,65536,76,32768,0,16,0.5,32768

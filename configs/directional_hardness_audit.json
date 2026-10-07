@@ -1,0 +1,8 @@
+{
+  "seed": 20261008,
+  "dimensions": [2, 3, 4, 5, 6],
+  "replicates": [0, 1],
+  "targets": ["zero", "half_total", "above_total"],
+  "weight_min": 1,
+  "weight_max_inclusive": 20
+}

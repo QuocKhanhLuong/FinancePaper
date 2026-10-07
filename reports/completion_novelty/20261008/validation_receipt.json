@@ -1,0 +1,134 @@
+{
+  "additional_exact_mapping": [
+    {
+      "exact_match": true,
+      "khintchine": "4/3",
+      "m": 2,
+      "normalizer": "3",
+      "sharp_contrast": "1/2"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "16/5",
+      "m": 3,
+      "normalizer": "15/4",
+      "sharp_contrast": "3/2"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "192/35",
+      "m": 4,
+      "normalizer": "35/8",
+      "sharp_contrast": "3"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "480/59",
+      "m": 5,
+      "normalizer": "59/12",
+      "sharp_contrast": "5"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "2880/259",
+      "m": 6,
+      "normalizer": "259/48",
+      "sharp_contrast": "15/2"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "32256/2237",
+      "m": 7,
+      "normalizer": "2237/384",
+      "sharp_contrast": "21/2"
+    },
+    {
+      "exact_match": true,
+      "khintchine": "28672/1591",
+      "m": 8,
+      "normalizer": "1591/256",
+      "sharp_contrast": "14"
+    }
+  ],
+  "base_git_head": "9312738bd57b500597aab43559e8dfe66151a1a2",
+  "branch": "research/decision-value-novelty-20261008",
+  "development_tests": {
+    "bounded_completion": 10,
+    "completion_moments": 19
+  },
+  "existing_tracked_files_modified": [],
+  "figure_validation": {
+    "pdf_exported": true,
+    "png_visually_inspected": true,
+    "warning": "First render emitted Fontconfig no writable default cache directories; export succeeded. Reporter now sets a local XDG_CACHE_HOME."
+  },
+  "final_tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "exit_code": 0,
+    "log_sha256": "5a5827e0d71f818c1742af4d4cf664612e85ddfb352e03ef16091f16dfdc942e",
+    "summary": "178 passed, 1 skipped, 3 warnings in 23.80s",
+    "wall_seconds": 25.082475415896624
+  },
+  "historical_configs_and_results": "UNCHANGED",
+  "local_work": "No preexisting tracked change overwritten; ignored historical runs not modified by these scripts",
+  "main_sha_verified": "e7cac089d98500ac57771d419dff46804ced52c3",
+  "publication": {
+    "force_push": "NOT_RUN",
+    "main_merge": "NOT_RUN",
+    "remote": "origin",
+    "status": "PRECOMMIT_VALIDATION"
+  },
+  "resume_and_guard_checks": [
+    {
+      "check": "moments_complete_resume",
+      "exit_code": 0,
+      "seconds": 0.37216924992389977
+    },
+    {
+      "check": "moments_config_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Resume rejected: code/config/dependencies differ or --resume absent"
+    },
+    {
+      "check": "moments_output_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/moments_guard/correct_000.json"
+    },
+    {
+      "check": "bounded_complete_resume",
+      "exit_code": 0,
+      "seconds": 0.4375589999835938
+    },
+    {
+      "check": "bounded_config_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Resume rejected: source/config/dependency drift or missing --resume"
+    },
+    {
+      "check": "bounded_output_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/bounded_guard/m1_p1_10.json"
+    },
+    {
+      "check": "directional_complete_resume",
+      "exit_code": 0,
+      "seconds": 0.6671259999275208
+    },
+    {
+      "check": "directional_config_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Resume rejected: code/config/dependencies drift or --resume missing"
+    },
+    {
+      "check": "directional_output_hash_rejection",
+      "exit_code": 1,
+      "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/directional_guard/n2_r0_zero.json"
+    }
+  ],
+  "review": {
+    "c3": "No blocking mathematical/code failure; paper-level novelty provisional",
+    "c4": "Direct generalized Khintchine prior mapping; standalone novelty NO-GO",
+    "normalizer_correction": "Lambda is not 2: m=2 gives 3. Coordinator exact mapping retained.",
+    "type": "AI non-originator read-only review, not human peer review"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "observed_dimensions": [1, 2, 3, 4, 5],
+  "reference_probabilities": ["1/10", "1/2", "9/10"],
+  "constant_predictions": [0.0, 0.5, 1.0],
+  "hidden_laws": [["1/2", "1/2"], ["1/10", "9/10"], ["1/5", "3/10", "1/2"], ["1/10", "1/5", "3/10", "2/5"]],
+  "tolerance": 1e-10,
+  "directions": "each coordinate, all ones, first minus last (m>1)",
+  "device": "cpu"
+}

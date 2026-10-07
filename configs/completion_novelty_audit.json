@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "seed": 20261008,
+  "correctness_cases": 100,
+  "timing_repeats": 3,
+  "max_pair_states": 65536,
+  "mc_draws": [1024, 16384],
+  "benchmarks": [
+    {"depth": 2, "leaves": 4, "layout": "shared"},
+    {"depth": 4, "leaves": 4, "layout": "shared"},
+    {"depth": 8, "leaves": 4, "layout": "shared"},
+    {"depth": 12, "leaves": 4, "layout": "shared"},
+    {"depth": 16, "leaves": 4, "layout": "shared"},
+    {"depth": 24, "leaves": 4, "layout": "shared"},
+    {"depth": 4, "leaves": 16, "layout": "disjoint_hidden"},
+    {"depth": 6, "leaves": 16, "layout": "disjoint_hidden"}
+  ],
+  "joint_law_observed_dimensions": [2, 3, 4],
+  "joint_law_states": [3, 5],
+  "joint_law_seeds": [0, 1],
+  "knapsack_dimensions": [8, 12, 16],
+  "absolute_correctness_tolerance": 1e-10
+}

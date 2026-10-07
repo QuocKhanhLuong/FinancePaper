@@ -1,0 +1,28 @@
+{
+  "outputs": {
+    "reports/completion_novelty/20261008/RESULTS.md": "fe926922db90f3b63043f1b65e7e9b2bb918cb799d339342d7c5d175e916c1ef",
+    "reports/completion_novelty/20261008/benchmark.csv": "4690337f78f8eacca36932ebef2ea192d880fd33e53785b7502d3cda439f200f",
+    "reports/completion_novelty/20261008/bounded_execution_receipt.json": "0313849b1864fec574dfe62a28cf217ab39100dcf12dc61b4fb6a410ae63bdee",
+    "reports/completion_novelty/20261008/correctness.csv": "9c56aed934a6dd20a474886781fa73cd7898ee6f0235a148a791dd98013560f2",
+    "reports/completion_novelty/20261008/counting.csv": "6309c36fbfdab7c69763a74ada74c1ccd6e69897b846d4151d3fec41ba0d475e",
+    "reports/completion_novelty/20261008/counting_execution_receipt.json": "980bbd3f86c88623251046c80fdcb969ceb4f135b1b50c86aa0ba6cbca0cdab1",
+    "reports/completion_novelty/20261008/directional.csv": "95a724c02eeae91a5ad2bb995ded7825e20f016b4e1e2169d48868728bf3c7c5",
+    "reports/completion_novelty/20261008/fixed_q.csv": "78c0e883c06fb1e94d136f36db4fb18cb0b900d022dfdb730caf084a8518322a",
+    "reports/completion_novelty/20261008/joint_law.csv": "d530069921ae5c183c6a4919e841821b47f8b48a6dc24de98594b3e1df4f844f",
+    "reports/completion_novelty/20261008/moments_execution_receipt.json": "139eab70e2b2177919bb70760a56ec04d31a80b7d79162d3948da317830aadae",
+    "reports/completion_novelty/20261008/resume_guard_checks.json": "1209288629fd1f01e0251215a9344fc1c9f451eafc69ac1695eb094d579d6800",
+    "reports/completion_novelty/20261008/semivalue_mapping.json": "833f0037c6d8f6e0da2fa94eebe12a01c68f024445f24e0e51bbe553bbf61527",
+    "reports/completion_novelty/20261008/sharp_bounds.pdf": "c2570049278c371945bbdf611eb6d6a47d0782b37ccd2ec5fd8a9212d200cd12",
+    "reports/completion_novelty/20261008/sharp_bounds.png": "c505cd25ce20fe839bed46d84e2d0152fd356552bdd46c507e62e162a834456a",
+    "reports/completion_novelty/20261008/sharp_tree.csv": "7ff99b822ed5a0d504bbab322400264475137d3b7bf12b66f96c7e745aa3f45d",
+    "reports/completion_novelty/20261008/tail.csv": "4886307625250b4fe1aa80963b61e9e011214f8095c673bdd9776f9cea4d3d04",
+    "reports/completion_novelty/20261008/validation_receipt.json": "7a6d173bd6b9f43bf8ea5df618220f17b83201d7bb52d9486ecceb3894b30759"
+  },
+  "reporter_sha256": "d1daa5f8ecdaa3797fe0c2da45ba2b953d5568fb51fa4639a4bf0c7946947294",
+  "scope": "SYNTHETIC_MATHEMATICAL_AUDIT_NOT_HUMAN_OR_FINANCIAL_EVIDENCE",
+  "source_runs": {
+    "bounded": "runs/decision_value_pilot/bounded_20261007T183200Z",
+    "counting": "runs/decision_value_pilot/directional_20261007T184400Z",
+    "moments": "runs/decision_value_pilot/novelty_20261007T182100Z"
+  }
+}

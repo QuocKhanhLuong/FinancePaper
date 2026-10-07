@@ -1,0 +1,47 @@
+[
+  {
+    "check": "moments_complete_resume",
+    "exit_code": 0,
+    "seconds": 0.37216924992389977
+  },
+  {
+    "check": "moments_config_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Resume rejected: code/config/dependencies differ or --resume absent"
+  },
+  {
+    "check": "moments_output_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/moments_guard/correct_000.json"
+  },
+  {
+    "check": "bounded_complete_resume",
+    "exit_code": 0,
+    "seconds": 0.4375589999835938
+  },
+  {
+    "check": "bounded_config_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Resume rejected: source/config/dependency drift or missing --resume"
+  },
+  {
+    "check": "bounded_output_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/bounded_guard/m1_p1_10.json"
+  },
+  {
+    "check": "directional_complete_resume",
+    "exit_code": 0,
+    "seconds": 0.6671259999275208
+  },
+  {
+    "check": "directional_config_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Resume rejected: code/config/dependencies drift or --resume missing"
+  },
+  {
+    "check": "directional_output_hash_rejection",
+    "exit_code": 1,
+    "reason": "ValueError: Historical artifact hash mismatch: runs/decision_value_pilot/novelty_validation_20261008/directional_guard/n2_r0_zero.json"
+  }
+]

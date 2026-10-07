@@ -1,0 +1,103 @@
+{
+  "base_git_head": "9312738bd57b500597aab43559e8dfe66151a1a2",
+  "branch": "research/decision-value-novelty-20261008",
+  "completed_utc": "2026-10-07T18:32:36.633052+00:00",
+  "created_utc": "2026-10-07T18:32:20.216178+00:00",
+  "financial_data": "NOT_RUN",
+  "frozen": {
+    "config": {
+      "constant_predictions": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "device": "cpu",
+      "directions": "each coordinate, all ones, first minus last (m>1)",
+      "hidden_laws": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/10",
+          "9/10"
+        ],
+        [
+          "1/5",
+          "3/10",
+          "1/2"
+        ],
+        [
+          "1/10",
+          "1/5",
+          "3/10",
+          "2/5"
+        ]
+      ],
+      "observed_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reference_probabilities": [
+        "1/10",
+        "1/2",
+        "9/10"
+      ],
+      "schema": 1,
+      "tolerance": 1e-10
+    },
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "tqdm": "4.70.1"
+    },
+    "device": "cpu",
+    "numeric_threads": 1,
+    "python": "3.11.16",
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/run_bounded_completion_audit.py": "5720276c57052b20edd1996fbc1f986640be7601182db5ecd8e5e74bd395c6cd",
+      "configs/bounded_completion_audit.json": "1bf778e6a118aa4cd688eff497bd71b80d3f83519aecbce4e5924e99d30cb684",
+      "docs/BOUNDED_COMPLETION_THEOREM.md": "6306600aee83a6326421abfbfe9a13702e4314a71e7b1bd3970331b21741aac6",
+      "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/bounded_completion.py": "2acd907b1e1884bb894c657c3d6a1326e51806fd02486d7e84db92e1cd1fb135",
+      "src/financepaper/evaluation/completion_moments.py": "d9dd1ab2f3aa48ad4aa54d7bb1cf536dbb35bdaad457b5f619f8e5a755d730c8",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "tests/test_bounded_completion.py": "30c73703cd87409c58396b00abe3188a595462f1bbd22b7d433d998a79fb69c3",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    }
+  },
+  "human_study": "NOT_RUN",
+  "model_fitting": "NOT_RUN",
+  "outputs": {
+    "runs/decision_value_pilot/bounded_20261007T183200Z/directional.csv": "95a724c02eeae91a5ad2bb995ded7825e20f016b4e1e2169d48868728bf3c7c5",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/fixed_q.csv": "78c0e883c06fb1e94d136f36db4fb18cb0b900d022dfdb730caf084a8518322a",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/sharp_tree.csv": "7ff99b822ed5a0d504bbab322400264475137d3b7bf12b66f96c7e745aa3f45d"
+  },
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "rows": 411,
+  "task_receipts": {
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m1_p1_10_complete.json": "5e55fcdfa69c8af5c879d28ca306adf07a87e43f106ffb1be9e091c623b61933",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m1_p1_2_complete.json": "99141a2c5bf6bd8a71f74febf98db7fb6208e62cf5c45d7eed9fe83588ed00b1",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m1_p9_10_complete.json": "e846cafcab823d2e4f2cbc367727e04beb20ebcf6c628c35d67670cf17506b66",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m2_p1_10_complete.json": "6709b4807b0238084f2cbdaea3fcfed88ef1c710bb1bdf321791e548b962fa9c",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m2_p1_2_complete.json": "a77453882de5c6d876aafbc094a84863438de1ec0b5b495c6a0d978278bb49f0",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m2_p9_10_complete.json": "0a31ab71525e49125c588076c8a55accfa6a10a725f43cb2408eb9ee380da6fa",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m3_p1_10_complete.json": "c6b059147ccfcbc20de8dceaf5890696d87a03e84ec590dcd0529c8af37e165d",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m3_p1_2_complete.json": "d17c00a49a088d17ebb0b1bfbf69338166019abbcd94540139c9a7e494499ad7",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m3_p9_10_complete.json": "c8234680766cb92e9c8c7460c1e4483b712680327ce5eda0c7e5d18122f9fb4b",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m4_p1_10_complete.json": "785fba0e0c93c9840dc676423b4982a7111f8022bec28e7bd67d9bc12d709fe4",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m4_p1_2_complete.json": "108d050bcd6aef2ffcaa6d3be3ae09016ef3fd03e295f82325d80802088a0166",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m4_p9_10_complete.json": "d87fa25565e4b88860fd8047903cd046d669d38a76d838d8cc8f66c08505cd2e",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m5_p1_10_complete.json": "ddbc83b77e8c31d0e292ea41145bc30f6d8ac4ab61f5b1b22b4719f182adf44f",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m5_p1_2_complete.json": "f3566a693f6925ae860e5ad54fb9251135023ce108ed97eaa399e7e226627e37",
+    "runs/decision_value_pilot/bounded_20261007T183200Z/m5_p9_10_complete.json": "7d4b7faada285d441db2e6f54986613b3a8f60c455748146a3f408bcf5640ee8"
+  },
+  "task_seconds": 1.7887454153969884,
+  "tasks": 15,
+  "warnings": []
+}

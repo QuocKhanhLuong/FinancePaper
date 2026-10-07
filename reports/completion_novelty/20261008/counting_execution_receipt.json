@@ -1,0 +1,89 @@
+{
+  "base_git_head": "9312738bd57b500597aab43559e8dfe66151a1a2",
+  "branch": "research/decision-value-novelty-20261008",
+  "cardinality_checks": 150,
+  "completed_utc": "2026-10-07T18:40:38.967527+00:00",
+  "created_utc": "2026-10-07T18:40:30.201111+00:00",
+  "financial_data": "NOT_RUN",
+  "frozen": {
+    "config": {
+      "dimensions": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "replicates": [
+        0,
+        1
+      ],
+      "seed": 20261008,
+      "targets": [
+        "zero",
+        "half_total",
+        "above_total"
+      ],
+      "weight_max_inclusive": 20,
+      "weight_min": 1
+    },
+    "dependencies": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "tqdm": "4.70.1"
+    },
+    "device": "cpu",
+    "python": "3.11.16",
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/run_directional_hardness_audit.py": "7b04a3b966f65036fdd178bc2e297531577fc613fedf71f784a74fe92fb39d82",
+      "configs/directional_hardness_audit.json": "c4764ee3e3102dfafa64577d6523be2ed3a7b946921d17b51c7921e1be8a0f1b",
+      "docs/DIRECTIONAL_COMPLETION_HARDNESS.md": "eb6e60c1b46e2d83bc83ec67611c02009650faec7d61497e84db5b81a5aa0e2c",
+      "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/bounded_completion.py": "2acd907b1e1884bb894c657c3d6a1326e51806fd02486d7e84db92e1cd1fb135",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    }
+  },
+  "human_study": "NOT_RUN",
+  "instances": 30,
+  "model_fitting": "NOT_RUN",
+  "oracle_queries": 450,
+  "outputs": {
+    "runs/decision_value_pilot/directional_20261007T184400Z/counting.csv": "6309c36fbfdab7c69763a74ada74c1ccd6e69897b846d4151d3fec41ba0d475e"
+  },
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "task_receipts": {
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r0_above_total_complete.json": "e7e1c52b949b1cfacbbea05546b136c3f7a5fbe2b3dcb61103cedb078b8db218",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r0_half_total_complete.json": "eefe7fdc1ad8f356d6fdf0aacac33353eed0033cb948a7d56414690b8999b083",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r0_zero_complete.json": "8efbede0d2063e78a70fbe12cac1eed786a1016c3853ae19b1f537d86d0c43fd",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r1_above_total_complete.json": "1a8573f11f2adf18d73c3e7e54f8029931375a2677bbfc248cbbd56efdf46873",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r1_half_total_complete.json": "8d5daeb0e3028a1fad2b0e244871cfb66cb4899b7b1cc621eef8020ea4b09611",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n2_r1_zero_complete.json": "346fbec431caae091a670df3f5bfeec2654ca5e1e0c86d38dc981e64cd55a0bf",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r0_above_total_complete.json": "fbed3c57aec33dd607743f2393ff6ca749d4aac68b763236670e8fa2a47700cf",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r0_half_total_complete.json": "4e06ca911d2edb09a77620842798b69283444e45b5371273cdd47327d6f85513",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r0_zero_complete.json": "6d3cd8455204f3658bb8ce2d66d1b141d2f1313b47aefb19756688e729d0eb62",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r1_above_total_complete.json": "467b95fb5fb075933404e9be4e90fdd410170bb70f85760942dba58b0de27195",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r1_half_total_complete.json": "2da170fdceee6af12430508a70e979e9237b9d7bd78665763f304d041aadc211",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n3_r1_zero_complete.json": "ca8272dc27a96e2779d0fd6053882146998f038493c80c977a6d6cea3d3fa49f",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r0_above_total_complete.json": "30de09b1ef20367df1edf5e911ef16d5c10219becbee03822414099ab4f46c09",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r0_half_total_complete.json": "603dbbb4bdd68f374a308fd401d7c52a29367ecf397f00f39f27d6f302fd90de",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r0_zero_complete.json": "9628fbd2a0acecc440c3a0112dca96af6c707050206537acce5b61cfeb0efcbf",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r1_above_total_complete.json": "36fc008968ac54a644e1faebb33608227a7611c73e9044c02dfc2952c8e7908d",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r1_half_total_complete.json": "2853bfd995bab1462bd937e8159b9afe5b6fa567b383493247da4bdd23edf72c",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n4_r1_zero_complete.json": "e7b3ac8e69e879eef8f43be01c3fa34c718e0020ac785dc41a2f701f2f1f0ad4",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r0_above_total_complete.json": "c7db1193c74ec67df70ba127454498e307d3f15200ad0564c7428f839a58eee8",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r0_half_total_complete.json": "b57a9f274a520219ef0c93400c5fab80ccbe7ac413bb271c1a617a085157405c",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r0_zero_complete.json": "284d4172e0c9304e955d74d1ed5eb014055a4bd626cf0b12835d5454e61cf6a9",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r1_above_total_complete.json": "bf58e5c182dfc2ad1bc4da2f21029850b4304f774d42b9f76be112c542862823",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r1_half_total_complete.json": "f499b1bfaa32b9a1ca5e0e548750c227ff3a65f113f744ee645df7b1b3a9dfef",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n5_r1_zero_complete.json": "5a8c06970be347aed8840c78ae5f7397b67fb8b548771dc57f56f9e8f3096ee0",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r0_above_total_complete.json": "71a4993b3659154882a0d9851fc52cad749f15485e802aed9e0acec1315dfcf7",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r0_half_total_complete.json": "82910861601605ebeeb6d37ee83d2adec22c91fd48c60650c709d9e2b1d23f46",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r0_zero_complete.json": "1d1114d7672f2fa884114d4a5b39619cb4ed60b9d44a77db09975cdeb8247054",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r1_above_total_complete.json": "10f8f4bd1eeb0412bcdbdb3d7c652b7c23a0d9387b656ae297cc51ecee50a248",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r1_half_total_complete.json": "b6c77e99a30e0dda1b9a14a7ed2fb8573db3d06718c9cecac9cf8308678ffc06",
+    "runs/decision_value_pilot/directional_20261007T184400Z/n6_r1_zero_complete.json": "5ea04fcf9ab94cd1f2259acceeab04327e028e295edf82d31ccb99a964b54ac6"
+  },
+  "task_seconds": 0.7292812913656235
+}
