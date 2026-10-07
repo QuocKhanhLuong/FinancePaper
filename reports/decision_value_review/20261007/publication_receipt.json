@@ -1,0 +1,26 @@
+{
+  "aggregates": {
+    "RESULTS.md": "f7f6855bd5014ef0607c0b9ef7c52df613560ca02b6bbff742b203a62ce52d21",
+    "audit.json": "27b16be5f9730b6de71d784e5aaa03456ef0ca14e3a0f4d8539db4cd7458cefc",
+    "rule_baselines.csv": "769ad8c9e5f584bbb31328b9fec0d6cb34fce8fae4a036bfaec5ad1b2036fe44",
+    "stratum_counts.csv": "906698f6c021168954552974df5ce57033e62a3ff1d7127a1366316949d7e4c7",
+    "visible_lengths.csv": "7ac526f561f36a35917076af729fd28470c7158b5c46bc9f5c56b60ae8f9763f"
+  },
+  "human_study": "NOT_RUN",
+  "inputs_verified": 24,
+  "manifest_sha256": "f73023be00a6faa212ef1a189716fb67c06acca30dd5db59ff3f0030ad9aa257",
+  "run": "runs/decision_value_pilot/review_20261007T154931Z",
+  "source_run": "runs/decision_value_pilot/20261007T151716Z",
+  "source_run_sha256": "01631bda5f39805b66634a1c357de0b9c9adf283de0c6cbddcf5ef2ecc35e048",
+  "sources": {
+    "/Users/alvinluong/FinancePaper/scripts/run_decision_review.py": "3f09a4d9ba6c452ac5a1fbfc9046f316c575841b2d9aec023ee53d2f5c71c235",
+    "docs/DECISION_VALUE_REVIEW_GUIDE.md": "55589e55dba69e3649e2200ce43e2f4accc6ec99b269df20bc814fd41cea1057",
+    "scripts/run_decision_value_pilot.py": "8f2e6a4fe90e6310d0fe42e971c6eda6a493a4e686893efc86f1dad4b8c39be1",
+    "src/financepaper/evaluation/decision_review.py": "bf495162658b44572c695eeca9739ac4c120e097707e9fb5134a34f15c282f01",
+    "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+    "src/financepaper/evaluation/decision_vignettes.py": "78c9e2c6a5d462826e317f6d7c34b8184ad39451d99aa69c2272bfb37931adc0",
+    "templates/decision_review.html": "1af36ffefdb2ee2ff0eb1e44236b8d131c9125a909ecbe7fb6ee8f51edededa9",
+    "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+  },
+  "validation_receipt_sha256": "2d47560fc02b2e55ad6ba68d5ee144d58930f1c8114971724a44d701d2dc5af1"
+}

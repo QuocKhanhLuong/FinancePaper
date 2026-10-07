@@ -1,0 +1,9 @@
+cohort,stratum,n_cases,supported,review
+synthetic_pool,revised,19,6,13
+synthetic_pool,stable,150,78,72
+synthetic_pool,near_tie,50,25,25
+synthetic_pool,mc_false_negative,26,10,16
+selected_fixture,revised,4,2,2
+selected_fixture,stable,4,1,3
+selected_fixture,near_tie,4,3,1
+selected_fixture,mc_false_negative,4,1,3

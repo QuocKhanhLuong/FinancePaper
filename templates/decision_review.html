@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Ledger task · review preview</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#182c37;background:#f0f4f5;line-height:1.6;font-size:16px}
+*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1000px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #cbd5da}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#426376;font-weight:700}
+h1{font-size:28px;line-height:1.25;margin:5px 0 0}h2{font-size:18px;margin:0 0 12px}p{margin:0 0 12px}
+.tag{border:1px solid #b4c9ce;border-radius:20px;padding:5px 12px;font-size:12px;background:#e5f0f2}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:20px}.card{padding:24px;background:#fff;border:1px solid #d1dde0;border-radius:12px;margin-bottom:20px}
+.task{border-left:4px solid #14697c}.muted{color:#4c6371;font-size:14px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0}
+dt{font-size:13px;color:#4c6371}dd{font-weight:650;margin:0;font-size:21px}.risk{font-size:40px;font-weight:700;color:#155969;line-height:1.2}
+ul{padding-left:20px;margin:0}.notice{padding:14px;background:#fff4d9;border-radius:7px}.choices{display:flex;gap:10px;margin-top:16px}.choice{padding:5px 14px;border:1px solid #a8bdc5;border-radius:6px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px}button{padding:10px 20px;border:1px solid #155969;border-radius:7px;background:#155969;color:white;font:inherit;cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible{outline:3px solid #d69000;outline-offset:3px}
+footer{font-size:13px;color:#4c6371;padding-top:0}[hidden]{display:none!important}
+@media(max-width:700px){.grid{grid-template-columns:1fr}header,main,footer{padding:18px}.card{padding:20px}header{align-items:flex-start;gap:10px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header><div><div class="eyebrow">Synthetic decision task</div><h1>Evidence in an incomplete record</h1></div><span class="tag">Review preview</span></header>
+<main>
+<section class="card task"><h2>Your task</h2><p id="task"></p><div class="choices" aria-label="Possible choices"><span class="choice">Supported</span><span class="choice">Review</span></div></section>
+<div class="grid">
+<div>
+<section class="card"><h2>Available record</h2><dl class="facts" id="facts"></dl></section>
+<section class="card" id="explanation-card"><h2>Point explanation</h2><ul id="explanation"></ul></section>
+<section class="card" id="notice-card"><h2>Information notice</h2><p class="notice" id="notice"></p></section>
+<section class="card" id="completion-card"><h2>Hypothetical completions</h2><ul id="completions"></ul><p class="muted" id="caveat" style="margin-top:14px"></p></section>
+</div>
+<aside class="card" style="align-self:start"><h2>Current risk indicator</h2><p class="risk" id="risk"></p><p class="muted" id="context"></p></aside>
+</div>
+<nav aria-label="Case navigation"><button id="previous">Previous case</button><span id="position" aria-live="polite"></span><button id="next">Next case</button></nav>
+</main>
+<footer>Preview only. No answers, timings or personal information are collected. One assigned version of each case is included. Use arrow keys to navigate.</footer>
+<script id="case-data" type="application/json">__CASE_PAYLOAD__</script>
+<script>
+const cases=JSON.parse(document.getElementById('case-data').textContent);
+let position=0;
+const byId=id=>document.getElementById(id);
+function list(id,values){const node=byId(id);node.replaceChildren();for(const value of values){const item=document.createElement('li');item.textContent=value;node.append(item);}}
+function render(){const row=cases[position];byId('task').textContent=row.task;byId('context').textContent=row.context;byId('risk').textContent=(row.risk_probability*100).toFixed(1)+'%';
+const facts=byId('facts');facts.replaceChildren();for(const [key,label] of [['resource_A','Resource A'],['context_B','Context B'],['context_C','Context C'],['requirement_H','Requirement H']]){const block=document.createElement('div');const term=document.createElement('dt');const value=document.createElement('dd');term.textContent=label;value.textContent=row.available_record[key]===null?'Not supplied':String(row.available_record[key]);block.append(term,value);facts.append(block);}
+byId('explanation-card').hidden=row.explanation.length===0;list('explanation',row.explanation);byId('notice-card').hidden=!row.notice;byId('notice').textContent=row.notice;
+byId('completion-card').hidden=!row.completion_information;list('completions',row.completion_information||[]);byId('caveat').textContent=row.completion_caveat||'';
+byId('position').textContent='Case '+(position+1)+' of '+cases.length;byId('previous').disabled=position===0;byId('next').disabled=position===cases.length-1;}
+function move(delta){position=Math.max(0,Math.min(cases.length-1,position+delta));render();window.scrollTo(0,0);}
+byId('previous').addEventListener('click',()=>move(-1));byId('next').addEventListener('click',()=>move(1));
+document.addEventListener('keydown',event=>{if(event.key==='ArrowRight')move(1);if(event.key==='ArrowLeft')move(-1);});render();
+</script>
+</body>
+</html>

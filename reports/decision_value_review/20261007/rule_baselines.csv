@@ -1,0 +1,7 @@
+cohort,baseline,n_cases,correct,accuracy,evidence
+synthetic_pool,always_review,245,126,0.5142857142857142,deterministic_software_check_not_human_accuracy
+synthetic_pool,always_supported,245,119,0.4857142857142857,deterministic_software_check_not_human_accuracy
+synthetic_pool,current_record_rule,245,245,1.0,deterministic_software_check_not_human_accuracy
+selected_fixture,always_review,16,9,0.5625,deterministic_software_check_not_human_accuracy
+selected_fixture,always_supported,16,7,0.4375,deterministic_software_check_not_human_accuracy
+selected_fixture,current_record_rule,16,16,1.0,deterministic_software_check_not_human_accuracy

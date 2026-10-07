@@ -1,0 +1,29 @@
+{
+  "browser_qa_blocker": "IAB/browser connector unavailable; native Edge attempt interrupted by user-changed application state",
+  "browser_visual_qa": "NOT_COMPLETED",
+  "expert_approval": "NOT_RUN",
+  "human_study": "NOT_RUN",
+  "new_test_count": 10,
+  "stage_and_input_hashes_verified": true,
+  "static_preview_checks": [
+    "single public slot only",
+    "strict top-level and nested record field allowlists",
+    "escaped script delimiters",
+    "no forms or response collection",
+    "no network client calls",
+    "case assignment/content preserved"
+  ],
+  "test_source_sha256": "e627cdccabf5bb813a416c20c89bd41b30498d4fd0b137d15b0a7023b3b39c7d",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "device": "cpu",
+    "elapsed_seconds": 23.271078624995425,
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "passed": 138,
+    "skipped": 1,
+    "tests": 139,
+    "uv_lock_sha256": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+  }
+}

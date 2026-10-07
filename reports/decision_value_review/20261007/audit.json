@@ -1,0 +1,15 @@
+{
+  "answer_determined_by_arm1_current_facts": true,
+  "expert_review": "NOT_RUN",
+  "human_study": "NOT_RUN",
+  "interpretation": "Any human benefit would be a presentation/cognitive effect; human performance unmeasured",
+  "max_abs_shapley_error": 4.440892098500626e-16,
+  "new_information_required_for_correct_answer": false,
+  "pool_cases_checked": 245,
+  "power": "NOT_RUN",
+  "public_renderings_checked": 256,
+  "readiness": "UI_FIXTURE_ONLY_EXPERT_REVIEW_PENDING",
+  "rule_solver_accuracy": 1.0,
+  "selected_cases_checked": 16,
+  "shapley_comparisons": 490
+}
