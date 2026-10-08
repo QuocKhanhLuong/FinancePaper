@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "observed_dimensions": [2, 3, 4, 5, 8, 16, 32],
+  "reference_probabilities": ["1/10", "1/2", "9/10"],
+  "constant_moments": ["0", "1/10", "1/2", "9/10", "1"],
+  "structured_profiles": ["ascending", "descending", "alternating"],
+  "random_seeds": [271, 811, 1619],
+  "random_moment_values": ["0", "1/4", "1/2", "3/4", "1"],
+  "attaining_failure_masses": ["1/100", "1/10", "1/4", "1/2", "9/10"],
+  "release_budgets": ["1/100", "1/20", "1/10"],
+  "full_table_max_m": 5,
+  "constant_prediction": "1/2",
+  "max_task_seconds": 180,
+  "tolerance": 1e-9,
+  "device": "cpu"
+}

@@ -1,0 +1,102 @@
+{
+  "completed_utc": "2026-10-08T11:49:22.917119+00:00",
+  "device": "cpu",
+  "numeric_threads": 1,
+  "validator_sha256": "b5673f69423928c95fb7c19f8754fd5f1f43e3c75e22ab695447cc5239a38c1a",
+  "commands": [
+    {
+      "label": "complete_resume",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_reference_moment_audit_v2.py",
+        "--output",
+        "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z",
+        "--resume"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.812967584002763,
+      "log": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/complete_resume.log",
+      "log_sha256": "f22e1a3add138e9505e4744fc361032ae09c590eb7b9ad008f7c061ca8f7d9a4"
+    },
+    {
+      "label": "scratch_pause",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_reference_moment_audit_v2.py",
+        "--config",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_run",
+        "--stop-after-tasks",
+        "1"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.514343542046845,
+      "log": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_pause.log",
+      "log_sha256": "836a8321fc90d06aa411e61da0f93fe34119460a7994936238b2f0b9cc880b38"
+    },
+    {
+      "label": "config_drift",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_reference_moment_audit_v2.py",
+        "--config",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "Resume rejected: source/config/dependency drift",
+      "accepted": true,
+      "seconds": 0.4615565841086209,
+      "log": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/config_drift.log",
+      "log_sha256": "251160e1719c541d8e31925b2d54f7a447ebb295493300a87974b558d5aceb9b"
+    },
+    {
+      "label": "task_corruption",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_reference_moment_audit_v2.py",
+        "--config",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "artifact hash mismatch",
+      "accepted": true,
+      "seconds": 0.483924041967839,
+      "log": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/task_corruption.log",
+      "log_sha256": "884f2785eb5f8e6354dd45f750237eb561058fa8395c9df3d677c1593a961a6d"
+    },
+    {
+      "label": "full_pytest",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 24.869600542122498,
+      "log": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/full_pytest.log",
+      "log_sha256": "87345ed1d42144dcb7e5d10684628083e223ef226cb0e933d74ca52f3415b889"
+    }
+  ],
+  "complete_resume": {
+    "new": 0,
+    "reused": 336
+  },
+  "pytest_summary": "250 passed, 1 skipped, 3 warnings in 23.71s",
+  "real_run": "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z",
+  "real_receipt_sha256": "4c81c4d1901b55c52af0789e8260f610dc322b14f60b1a36207135419af69986",
+  "scratch_corruption_intentional": true
+}

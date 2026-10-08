@@ -1,0 +1,43 @@
+[
+  {
+    "device": "cpu",
+    "event": "start",
+    "resume": false,
+    "tasks": 336,
+    "utc": "2026-10-08T11:47:50.523079+00:00"
+  },
+  {
+    "event": "intentional_pause",
+    "new": 1,
+    "reused": 0,
+    "utc": "2026-10-08T11:47:50.531260+00:00"
+  },
+  {
+    "device": "cpu",
+    "event": "start",
+    "resume": true,
+    "tasks": 336,
+    "utc": "2026-10-08T11:47:57.432808+00:00"
+  },
+  {
+    "event": "complete",
+    "new": 335,
+    "reused": 1,
+    "seconds": 2.2171160830184817,
+    "utc": "2026-10-08T11:47:59.649922+00:00"
+  },
+  {
+    "device": "cpu",
+    "event": "start",
+    "resume": true,
+    "tasks": 336,
+    "utc": "2026-10-08T11:48:56.439625+00:00"
+  },
+  {
+    "event": "complete",
+    "new": 0,
+    "reused": 336,
+    "seconds": 0.08940962515771389,
+    "utc": "2026-10-08T11:48:56.529022+00:00"
+  }
+]

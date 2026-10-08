@@ -1,0 +1,58 @@
+{
+  "acceptance_tolerance": 1e-09,
+  "completed_tasks": 272,
+  "exact_optimum": "1",
+  "exact_primal_certificate": {
+    "event_residual": "0",
+    "objective_upper_bound": "1",
+    "s": [
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "z": "1"
+  },
+  "failed_case": {
+    "m": 16,
+    "moments": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "p": "9/10"
+  },
+  "failure_log": "runs/decision_value_pilot/reference_moments_validation_20261008T115500Z/complete_resume.log",
+  "failure_log_sha256": "91a4153815a511aa48b190acd899c25b67f1ce0426abaa89ebfcdc6f373c5b43",
+  "first_run": "runs/decision_value_pilot/reference_moments_20261008T115000Z",
+  "frozen_source_snapshot": "runs/decision_value_pilot/reference_moments_20261008T115000Z/frozen_source_snapshot",
+  "original_error": 1.1021262791288677e-09,
+  "original_lp": 0.9999999988978737,
+  "remaining_tasks": 64,
+  "status": "STOPPED_NUMERICAL_DISCREPANCY",
+  "v2_error": 0.0,
+  "v2_lp": 1.0
+}

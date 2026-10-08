@@ -1,0 +1,38 @@
+{
+  "copies": {
+    "reports/reference_moment_frontier/20261008/c5_attainer.csv": {
+      "sha256": "3a1e281c1d48c5f71e5165e0999faf2b84b0dd622ecd7136088cfe044468ecf8",
+      "source": "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z/c5_attainer.csv"
+    },
+    "reports/reference_moment_frontier/20261008/execution_receipt.json": {
+      "sha256": "4c81c4d1901b55c52af0789e8260f610dc322b14f60b1a36207135419af69986",
+      "source": "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z/execution_receipt.json"
+    },
+    "reports/reference_moment_frontier/20261008/manifest.json": {
+      "sha256": "c8003a8f49469c52bdc07aa7b06ff1b73c9293a64d21cdfc7fe0711df0926a30",
+      "source": "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z/manifest.json"
+    },
+    "reports/reference_moment_frontier/20261008/profile.csv": {
+      "sha256": "f269e97f92b5bf0587e24ad7ea5d48f28d5f45eb5130c4e111d12507ea9f4152",
+      "source": "runs/decision_value_pilot/reference_moments_v2_20261008T120000Z/profile.csv"
+    },
+    "reports/reference_moment_frontier/20261008/validation_receipt.json": {
+      "sha256": "1b3f03a2f698f7a302cd19555795a0fb6b9e6f1674ffd2cfc87f1c17645c29ad",
+      "source": "runs/decision_value_pilot/reference_moments_v2_validation_20261008T120500Z/validation_receipt.json"
+    }
+  },
+  "derived": {
+    "reports/reference_moment_frontier/20261008/coverage.csv": "71f756ca6498d0b61503e545f95a0fe377736e7f57745645a1a9a70f3632310e",
+    "reports/reference_moment_frontier/20261008/first_progress_milestones.json": "2a7f5224c4665395826d8c8dd6fffaf90e3816938459aee89594a925239ed2d0",
+    "reports/reference_moment_frontier/20261008/first_run_failure.json": "b61f3218ade044119781ab9330c34b020a606c0d1c13de3704e2568710de6df8",
+    "reports/reference_moment_frontier/20261008/first_run_manifest.json": "30576c0fae8e2e6647b251ccf6ae331e7cf5b8db2298e812ae953371ba2dbc6c",
+    "reports/reference_moment_frontier/20261008/first_run_partial.csv": "40078adbfd8f5c845f8e8641846e9cf0ee4299d903083c2854ab5717e611ce30",
+    "reports/reference_moment_frontier/20261008/progress_milestones.json": "38de6f5d95dd763fcfb2fd0dbb50ca7bc04131295dd2171da9956b9970ad3dbd",
+    "reports/reference_moment_frontier/20261008/summary.json": "6c72b8b2c095fa1b51a37a1759b6e690e4620e1b32566ddf2c2a097945b638d7"
+  },
+  "first_log": {
+    "path": "runs/decision_value_pilot/reference_moments_validation_20261008T115500Z/complete_resume.log",
+    "sha256": "91a4153815a511aa48b190acd899c25b67f1ce0426abaa89ebfcdc6f373c5b43"
+  },
+  "summarizer_sha256": "daa2b75c0be622bbf3dbe6f7b09ca5e7ac6e860f728738dd3411cd40f026340f"
+}
