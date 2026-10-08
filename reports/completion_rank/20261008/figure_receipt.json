@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "runs/decision_value_pilot/rank_frontier_20261008T091400Z/certificate.csv": "17ab4898db5d667798f1bafcf8e7a280c5d8c7b044ecddabf81bcfaa5b2bf882",
+    "runs/decision_value_pilot/rank_frontier_20261008T091400Z/threshold.csv": "e813e23892b50f7a7f987d42e37ffcc0ad2fe60466e9e08de45e4bf8742b7b06"
+  },
+  "note": "Lines join configured rational-audit points; not financial observations or measured human outcomes.",
+  "outputs": {
+    "reports/completion_rank/20261008/rank_frontier.pdf": "aed11d5f8550c8396d502ee99c74cd4af4964971c262ce5856b5227ff9c0d8d6",
+    "reports/completion_rank/20261008/rank_frontier.png": "0b5f19c884f1ece69fa1d7ff45abc4beb704f37466d4f9713a88a7c9ef4a88c6"
+  },
+  "synthetic_theory_only": true,
+  "warnings": []
+}

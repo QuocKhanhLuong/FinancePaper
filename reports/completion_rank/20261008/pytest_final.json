@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/Users/alvinluong/FinancePaper/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "final_lines": [
+    "tests/test_explanations.py::test_tree_shap_same_early_stopped_predictor_and_interactions",
+    "  /Users/alvinluong/FinancePaper/.venv/lib/python3.11/site-packages/shap/plots/colors/_colors.py:47: PendingDeprecationWarning: The set_bad function will be deprecated in a future version. Use cmap.with_extremes(bad=...) or Colormap(bad=...) instead.",
+    "    red_blue.set_bad(gray_rgb.tolist(), 1.0)",
+    "",
+    "tests/test_explanations.py::test_tree_shap_same_early_stopped_predictor_and_interactions",
+    "  /Users/alvinluong/FinancePaper/.venv/lib/python3.11/site-packages/shap/plots/colors/_colors.py:48: PendingDeprecationWarning: The set_over function will be deprecated in a future version. Use cmap.with_extremes(over=...) or Colormap(over=...) instead.",
+    "    red_blue.set_over(gray_rgb.tolist(), 1.0)",
+    "",
+    "tests/test_explanations.py::test_tree_shap_same_early_stopped_predictor_and_interactions",
+    "  /Users/alvinluong/FinancePaper/.venv/lib/python3.11/site-packages/shap/plots/colors/_colors.py:49: PendingDeprecationWarning: The set_under function will be deprecated in a future version. Use cmap.with_extremes(under=...) or Colormap(under=...) instead.",
+    "    red_blue.set_under(gray_rgb.tolist(), 1.0)  # \"under\" is incorrectly used instead of \"bad\" in the scatter plot",
+    "",
+    "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html",
+    "=========================== short test summary info ============================",
+    "SKIPPED [1] tests/test_temporal_integration.py:57: MPS hardware unavailable",
+    "192 passed, 1 skipped, 3 warnings in 24.01s"
+  ],
+  "returncode": 0,
+  "sha256": "4d39e76f1c6f4af331daaa954877efe00fdfa6d975be262acf63e48f683656ca",
+  "wall_seconds": 25.19483512500301
+}

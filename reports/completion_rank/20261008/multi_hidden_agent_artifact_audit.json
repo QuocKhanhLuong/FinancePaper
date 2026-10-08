@@ -1,0 +1,73 @@
+{
+  "agent_artifact_hashes": {
+    "audit.py": "93ea4f23ea9e7d84f036e3a21d14a6a302db22b0546d9b48f8bffd4358fd748a",
+    "results.json": "e600b3e457622021c58841f9781408d12495b7263650c3d000771bf4a132df1b",
+    "weighted_threshold_audit.py": "890a698badfc6c46829f4cae2be246e7ef2b9e607ef1dd5cf04637753db16cad",
+    "weighted_threshold_results_replay.json": "2ec28de6fd48126add746fc88da8a7895b0b93f58b32434154f8ddf7c1104f25"
+  },
+  "status": "REPRODUCED_ARTIFACT_AUDIT_NOT_FULL_RANDOM_LP_REPLAY",
+  "random_candidate_draws": 3600,
+  "unique_LPs_reported": 2825,
+  "rows": [
+    {
+      "k": 3,
+      "trials": 600,
+      "unique": 96,
+      "feasible": 96,
+      "best_gap": 0.0,
+      "mu": 0.3333333333333333,
+      "target": 0.3333333333333333,
+      "z": 0.5
+    },
+    {
+      "k": 4,
+      "trials": 600,
+      "unique": 404,
+      "feasible": 404,
+      "best_gap": 1.1102230246251565e-16,
+      "mu": 0.3333333333333334,
+      "target": 0.3333333333333333,
+      "z": 0.5
+    },
+    {
+      "k": 5,
+      "trials": 600,
+      "unique": 545,
+      "feasible": 545,
+      "best_gap": 2.55351295663786e-15,
+      "mu": 0.33333333333333587,
+      "target": 0.3333333333333333,
+      "z": 0.5
+    },
+    {
+      "k": 6,
+      "trials": 600,
+      "unique": 586,
+      "feasible": 586,
+      "best_gap": -0.003967765748026808,
+      "mu": 0.003906250000004688,
+      "target": 0.007874015748031496,
+      "z": 0.984375
+    },
+    {
+      "k": 7,
+      "trials": 600,
+      "unique": 595,
+      "feasible": 595,
+      "best_gap": -0.0021854575163389525,
+      "mu": 0.001736111111112028,
+      "target": 0.00392156862745098,
+      "z": 0.9921875
+    },
+    {
+      "k": 8,
+      "trials": 600,
+      "unique": 599,
+      "feasible": 599,
+      "best_gap": -0.0011756971624249267,
+      "mu": 0.0007812500000016878,
+      "target": 0.0019569471624266144,
+      "z": 0.99609375
+    }
+  ]
+}

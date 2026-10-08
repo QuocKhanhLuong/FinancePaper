@@ -1,0 +1,64 @@
+{
+  "completed_utc": "2026-10-08T09:26:12.560783+00:00",
+  "created_utc": "2026-10-08T09:25:51.674058+00:00",
+  "frozen": {
+    "device": "cpu",
+    "numeric_threads": 1,
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/challenge_multiple_hidden_rank.py": "835c4379f4c38efe751c195b7d7cbbb5dffae850e000ce6184124c9ef62a9e5f",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/completion_moments.py": "d9dd1ab2f3aa48ad4aa54d7bb1cf536dbb35bdaad457b5f619f8e5a755d730c8",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "tqdm": "4.70.1"
+    }
+  },
+  "outputs": {
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/results.json": "4ed4f42cde3d8466b20b1d569f9e4c3954c6e1da678f8f031b7575f9f8bf8f5c"
+  },
+  "status": "EXPLORATORY_NOT_A_THEOREM",
+  "task_receipts": {
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k2_coord_half_complete.json": "19bf020f4a59db4b91c106be49faf3fc885f9d41dc1db2a1089448739ffb2bec",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k2_low2_complete.json": "83945c0ddae0ac739cd2d81dbdcf0c949e485d8e5e2b20124a46b5ddb3d4b712",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k2_low_half_complete.json": "0e014fb77df85faae52f2ab1f5c0b46c19dc365e906172ee8a2a83ebf5df5350",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k2_one_complete.json": "85f0bc4bad0be5aa0f2d93aea1120dcfd56e64131302cac352ef33adfe2cc2b3",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k2_subcube_codim2_complete.json": "a639fcbc709016f25b65e464ed96b1f1ecf77aebfba53a8f05cf2b44a086061a",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k3_coord_half_complete.json": "ca824880a8769dbb9b389bba5ec3f3a324bf9c2307c032fc41bcc482402b02df",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k3_low2_complete.json": "413b5f1d858207125054bcaf3a148016996c7e3c2b93c9e9e085d2282584e873",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k3_low_half_complete.json": "b0c0f35b80f5507599a0de7345b6bc841cdb213714bfd6591d6bcda8a23460c5",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k3_one_complete.json": "869e96daa8c01aad0926d8c8544868b60f6b5345aa797360a67561d74006cf6e",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k3_subcube_codim2_complete.json": "4d850bee19ab878e579827d3e2dab8bcf9a0f518dacffc72de90ccaeefcd7776",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k4_coord_half_complete.json": "320d6031fd3d63a8dc7548d8633f578d3ce5ec1bf077615b5dd48393fbad9e95",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k4_low2_complete.json": "5db84c600efb9efffeb499f602156d58ae4070f905961146f2397cfd3f972604",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k4_low_half_complete.json": "fb665af209937668c326707387e262bf267c0425e641b9dc42357873a3986df5",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k4_one_complete.json": "316d778122f7e5df9656ab37cf6995f39a2b39a7322d3d7f5263eddc2758501d",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k4_subcube_codim2_complete.json": "667c4d291f2ccc10545241a6eb39512e2000e000533163b18df1edf73a4ce7c5",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k5_coord_half_complete.json": "7db84c955619a983f13f589ea6e82febd93e827e0ab974d39362dbe9098195ae",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k5_low2_complete.json": "fb904aaf1700440a05e98f484a328faac2caa192421695dac81647f115e47547",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k5_low_half_complete.json": "40193bdabce64a810179364208370873d883502b99fd1ecbd114950ad8b76b6e",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k5_one_complete.json": "f74350725993f0b8c08b7448a7e01ccd086874493a10b042c2200f1eb87255d8",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k5_subcube_codim2_complete.json": "6aafe1f97fbd08d5d06ec110d251e1abbb2088052c49d90f4e7ce6cfcbbf0226",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k6_coord_half_complete.json": "d3617b2d722b7527a971d64e41e82d6cce4fbcf2105fda3970883dc49f5935a6",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k6_low2_complete.json": "8c6bfc76f7751729b2f4ac431c33ea745eda5ef3452e9ac2d3ddfc8c22bf23a1",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k6_low_half_complete.json": "3df03b763a7d889217f79159856dbc3fcd08a7140dc1e72aa6aa7c970a27ddec",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k6_one_complete.json": "baff776b604d8d9a298f524b07a4eab814eb7e937c6f152d7a16360b69a85b0f",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k6_subcube_codim2_complete.json": "608eef51e181b091d6989394facd6ae47b1767b48f1e291fd1b85acb6d1b6f7e",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k7_coord_half_complete.json": "e3143fe33063802c4c8f04ad94ce9ab9b098d5faf2bf49ed8b287cd8043c24a9",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k7_low2_complete.json": "d005e0277cc25237721ae8988e91224ccd96562acc5492a10327d8f152efeaab",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k7_low_half_complete.json": "92127582d429e29935aa59f9e9fbaa463ce2697f192e232d0f1357c490106349",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k7_one_complete.json": "11eb13db3cede9b7bae64781b38eb8266d25472865538bf52fc245738801f5dd",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k7_subcube_codim2_complete.json": "b707ce3793daf61b8f4a10eff833d4782dad993baaf1a8530ff2857cdcb452d7",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k8_coord_half_complete.json": "05f8960ccad1f300d069aec2dc784130c384662951d4cfd68b94ebed9e2d4bd9",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k8_low2_complete.json": "b241f349fb31a8d6eba104e8f4555c5cc969ba2acdb059523d910a9d3a3cf8a3",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k8_low_half_complete.json": "2082b7a40581b14e115dd580c96bb8e04d598e7f612284acf42d79edcab3d4c5",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k8_one_complete.json": "05eebf45f415bcf903e630f539cc8103d4faa44eda61b746b7fd225c5e580115",
+    "runs/decision_value_pilot/rank_multiple_hidden_20261008T092700Z/k8_subcube_codim2_complete.json": "d2260e0628d2e0a3bc16429a455af615012a5b3034ba209b3735c1ea55c76355"
+  },
+  "task_seconds": 0.17284616502001882,
+  "tasks": 35,
+  "warnings": []
+}

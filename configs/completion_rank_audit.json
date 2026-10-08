@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "observed_dimensions": [2, 3, 4, 5],
+  "reference_probabilities": ["1/10", "1/2", "9/10"],
+  "failure_masses": ["1/100", "1/10", "1/4", "1/2", "9/10"],
+  "constant_predictions": ["0", "1/2", "1"],
+  "strict_perturbation": "1/1000",
+  "multi_state_law": ["1/5", "3/10", "1/2"],
+  "curve_dimensions": [2, 3, 5, 10, 25, 50, 100],
+  "curve_risk_budgets": ["1/100", "1/20", "1/10", "1/4", "1/2"],
+  "certificate_means": ["1/10", "1/4", "1/2", "3/4", "9/10"],
+  "tolerance": 1e-10,
+  "device": "cpu"
+}

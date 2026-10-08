@@ -1,0 +1,37 @@
+{
+  "actual_research_outputs_modified": false,
+  "checks": [
+    {
+      "check": "completed_resume",
+      "elapsed_seconds": 0.5243784170597792,
+      "log": "runs/decision_value_pilot/rank_validation_20261008T091800Z/completed_resume.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "96f9998411aec4f2b1a633be91c767640a83854836a2bd6d1723ef97298edae2"
+    },
+    {
+      "check": "intentional_pause",
+      "elapsed_seconds": 0.4932848329190165,
+      "log": "runs/decision_value_pilot/rank_validation_20261008T091800Z/intentional_pause.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "3a5bfa35444efc2310b9f989e6cc7cf29026e1e9eafbabe23c6fa441174b0d57"
+    },
+    {
+      "check": "config_drift_rejected",
+      "elapsed_seconds": 0.4358930829912424,
+      "log": "runs/decision_value_pilot/rank_validation_20261008T091800Z/config_drift_rejected.log",
+      "passed": true,
+      "returncode": 1,
+      "sha256": "3ca1bc0a992978e00c7dee322f797a66b9aa96ed42f42f6a9a45290ebea451d9"
+    },
+    {
+      "check": "completed_output_corruption_rejected",
+      "elapsed_seconds": 0.4593315420206636,
+      "log": "runs/decision_value_pilot/rank_validation_20261008T091800Z/completed_output_corruption_rejected.log",
+      "passed": true,
+      "returncode": 1,
+      "sha256": "b6be180d0459e08354a8c65e0f83998493b66260bc3dfe0eca15dc2cb51e7e2f"
+    }
+  ]
+}

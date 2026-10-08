@@ -1,0 +1,2 @@
+normalized_mean,stage,actual_failure,gap_bad,gap_good,invalid_bound,model_fitting,verdict
+49/100,law_mismatch,1/2,-1/200,99/200,0.34228187919463088,NOT_RUN,EXPECTED_ASSUMPTION_FAILURE
