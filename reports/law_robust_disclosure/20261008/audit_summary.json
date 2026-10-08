@@ -1,0 +1,61 @@
+{
+  "tasks": 106,
+  "rows": 1650,
+  "lp_solves": 1620,
+  "task_seconds": 1.0456102048046887,
+  "device": "cpu",
+  "numeric_threads": 1,
+  "coalition_error_max": 2.220446049250313e-16,
+  "witness_lp_error_max": 1.1102230246251563e-16,
+  "three_state_excess_max": 5.551115123125783e-17,
+  "blind_matched_violations": 225,
+  "zero_reference_witnesses": 135,
+  "strict_same_information_improvements": 14,
+  "baseline_cases": 30,
+  "warnings": [],
+  "progress_milestones": [
+    {
+      "utc": "2026-10-08T09:47:57.657930+00:00",
+      "event": "start",
+      "tasks": 106,
+      "device": "cpu",
+      "resume": false
+    },
+    {
+      "utc": "2026-10-08T09:47:57.665807+00:00",
+      "event": "intentional_pause",
+      "new": 1,
+      "reused": 0
+    },
+    {
+      "utc": "2026-10-08T09:48:07.020709+00:00",
+      "event": "start",
+      "tasks": 106,
+      "device": "cpu",
+      "resume": true
+    },
+    {
+      "utc": "2026-10-08T09:48:08.121656+00:00",
+      "event": "complete",
+      "new": 105,
+      "reused": 1,
+      "seconds": 1.1009479169733822
+    },
+    {
+      "utc": "2026-10-08T09:52:40.800257+00:00",
+      "event": "start",
+      "tasks": 106,
+      "device": "cpu",
+      "resume": true
+    },
+    {
+      "utc": "2026-10-08T09:52:40.850780+00:00",
+      "event": "complete",
+      "new": 0,
+      "reused": 106,
+      "seconds": 0.05052191694267094
+    }
+  ],
+  "actual_financial_evaluation": "NOT_RUN",
+  "human_study": "NOT_RUN"
+}

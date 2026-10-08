@@ -1,0 +1,30 @@
+{
+  "copies": {
+    "reports/law_robust_disclosure/20261008/witness.csv": {
+      "source": "runs/decision_value_pilot/law_robust_20261008T094800Z/witness.csv",
+      "sha256": "550cf09d22e7a4db98c8859f3ed86156e7fff8020cc6f225172de84952d4c4fa"
+    },
+    "reports/law_robust_disclosure/20261008/three_state.csv": {
+      "source": "runs/decision_value_pilot/law_robust_20261008T094800Z/three_state.csv",
+      "sha256": "00549c708403058ddb69a329b92fbbda7456221860deb5652118d2146361e550"
+    },
+    "reports/law_robust_disclosure/20261008/baseline.csv": {
+      "source": "runs/decision_value_pilot/law_robust_20261008T094800Z/baseline.csv",
+      "sha256": "e168632840ec5341b624de0162e3c8aa095fbd6f545e14717592a00ba331aeae"
+    },
+    "reports/law_robust_disclosure/20261008/manifest.json": {
+      "source": "runs/decision_value_pilot/law_robust_20261008T094800Z/manifest.json",
+      "sha256": "a2c58cad12d60c31e424fd9ec9a1f105dd492130c689d1b0c1ba188a8aeef9f5"
+    },
+    "reports/law_robust_disclosure/20261008/execution_receipt.json": {
+      "source": "runs/decision_value_pilot/law_robust_20261008T094800Z/execution_receipt.json",
+      "sha256": "115559bb8704f7305d093ea4be3e3b5d645285632fb01720554913ac5ac4e586"
+    },
+    "reports/law_robust_disclosure/20261008/validation_receipt.json": {
+      "source": "runs/decision_value_pilot/law_validation_20261008T095500Z/validation_receipt.json",
+      "sha256": "bc8b5f03708e348615e2645d738a8fab4e5e2a8c230060abd4fd0b8bd19157cc"
+    }
+  },
+  "progress_local": "runs/decision_value_pilot/law_robust_20261008T094800Z/progress.jsonl",
+  "progress_sha256": "5258482fb664e1d7982524631df26d3f40e7314b1660338d138acb6e9487d6cb"
+}

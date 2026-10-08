@@ -1,0 +1,65 @@
+{
+  "base_git_head": "dcb59d5a449d2de3550ce49d5b1e3caee3e74c71",
+  "created_utc": "2026-10-08T09:47:57.643285+00:00",
+  "frozen": {
+    "config": {
+      "baseline_means": [
+        "1/10",
+        "1/4",
+        "1/2",
+        "3/4",
+        "9/10"
+      ],
+      "constant_predictions": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "device": "cpu",
+      "failure_masses": [
+        "1/100",
+        "1/10",
+        "1/4",
+        "1/2",
+        "9/10"
+      ],
+      "reference_probabilities": [
+        "1/10",
+        "1/2",
+        "9/10"
+      ],
+      "schema": 1,
+      "simplex_denominator": 4,
+      "tolerance": 1e-10,
+      "tv_budgets": [
+        "0",
+        "1/20",
+        "1/10",
+        "1/4",
+        "1/2",
+        "1"
+      ]
+    },
+    "device": "cpu",
+    "numeric_threads": 1,
+    "python": "3.11.16",
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/run_law_robust_disclosure_audit.py": "de70c3420df89dcf39618b0b8341a7ef3c90359a7213ccf489cf6c8efcacd729",
+      "configs/law_robust_disclosure_audit.json": "e20de1bb7a28d7e1115920ed09c0682d0bdec059342674159a725b98e2ce56b8",
+      "docs/LAW_ROBUST_DISCLOSURE.md": "3f70bca0da52ce4744348347a57a7172cf2d48b9e0c6a02f63d763ed9e198315",
+      "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/completion_moments.py": "d9dd1ab2f3aa48ad4aa54d7bb1cf536dbb35bdaad457b5f619f8e5a755d730c8",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "src/financepaper/evaluation/law_robust_disclosure.py": "11643f329a67052d14cec78fd79fd49067eb5c3cd2d8d5ca2e67d8d819666dd9",
+      "tests/test_law_robust_disclosure.py": "3b2a9a027fade4a1777c7475fb260ea05e2ad7e086dbfe5a1069d969e34389ed",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "tqdm": "4.70.1"
+    }
+  }
+}

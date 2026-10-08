@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "reference_probabilities": ["1/10", "1/2", "9/10"],
+  "tv_budgets": ["0", "1/20", "1/10", "1/4", "1/2", "1"],
+  "failure_masses": ["1/100", "1/10", "1/4", "1/2", "9/10"],
+  "constant_predictions": ["0", "1/2", "1"],
+  "simplex_denominator": 4,
+  "baseline_means": ["1/10", "1/4", "1/2", "3/4", "9/10"],
+  "tolerance": 1e-10,
+  "device": "cpu"
+}
