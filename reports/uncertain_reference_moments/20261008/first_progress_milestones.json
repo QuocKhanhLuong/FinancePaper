@@ -1,0 +1,22 @@
+[
+  {
+    "device": "cpu",
+    "event": "start",
+    "resume": false,
+    "tasks": 1716,
+    "utc": "2026-10-08T12:18:57.624547+00:00"
+  },
+  {
+    "event": "intentional_pause",
+    "new": 1,
+    "reused": 0,
+    "utc": "2026-10-08T12:18:57.630799+00:00"
+  },
+  {
+    "device": "cpu",
+    "event": "start",
+    "resume": true,
+    "tasks": 1716,
+    "utc": "2026-10-08T12:19:03.817572+00:00"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "reports/uncertain_reference_moments/20261008/box.csv": "326d21e8168c88bb2ed26c032ec8c4a10b4a2b6e596c3452d22f0c6d58a7e3cd",
+    "reports/uncertain_reference_moments/20261008/coverage.csv": "b0c51b0bdcb060a26c6c5f3cbd3975a9a2d648219e204f4f4ecf73165e2302e5",
+    "reports/uncertain_reference_moments/20261008/execution_receipt.json": "a6b5c9e38170cef44222e60d9225ed849089aafc60f7664e2609de3f68beeef8",
+    "reports/uncertain_reference_moments/20261008/first_progress_milestones.json": "6b8d69c284d02cc1c87a969cd21a0faeb676d78f72ec6d58ee150210c25779d3",
+    "reports/uncertain_reference_moments/20261008/first_run_failure.json": "f8f28541227db9d13181758d74be82212bc3b22f5fafbcf241b788aa738c1789",
+    "reports/uncertain_reference_moments/20261008/first_run_manifest.json": "d2afc9df7f986f75e42cbda15bea7bfbf5f4ce872eb5b3b8fc82797721ac4202",
+    "reports/uncertain_reference_moments/20261008/first_run_partial.csv": "853164d00511821428a8ad373fe0d5060ab2ee68d2081d1bd33484d91908ba09",
+    "reports/uncertain_reference_moments/20261008/manifest.json": "5858f587e9c81ebbe26bd43329e7249ef204b7f35c27cb2a6745392dd42f854c",
+    "reports/uncertain_reference_moments/20261008/paired_sample.csv": "d26e0ebb264773e620883e7cbc4f45e75000dffa558c2354767d306fbd0e5ed5",
+    "reports/uncertain_reference_moments/20261008/progress_milestones.json": "a72c208b956febadc21c71773e3efe1ca647b7fcfcab3864493e523c2d97c8bf",
+    "reports/uncertain_reference_moments/20261008/sample_cells.csv": "d1c6aabbee05fb63625bfdb41e0cf960ba7c149f2cef76008d7f9af82ede3794",
+    "reports/uncertain_reference_moments/20261008/summary.json": "39c541e6d90be2f2fa8713840b1c4a9c5ea82c9b172a72d257488e1e1f303709",
+    "reports/uncertain_reference_moments/20261008/validation_receipt.json": "45003d4b647a6adb6cd6a4df9b471a7daac5a8143f47179be5591c5553ba9be9"
+  },
+  "first_run": "runs/decision_value_pilot/uncertain_moments_20261008T121900Z",
+  "run": "runs/decision_value_pilot/uncertain_moments_v2_20261008T122300Z",
+  "summarizer_sha256": "7b1e15b428766de94d5b517209dc5fbb9f6aeb45049fcf064c0b64882e4949de",
+  "validation": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "profile_config": "configs/reference_moment_audit.json",
+  "radii": ["0", "1/1000", "1/200", "1/100", "1/50", "1/20", "1/10"],
+  "release_budgets": ["1/100", "1/20", "1/10"],
+  "sample_dimensions": [3, 8, 16],
+  "sample_probability": "1/2",
+  "sample_sizes": [128, 2048, 32768],
+  "replicates": 32,
+  "confidence_delta": "1/20",
+  "seed": 20261008,
+  "lp_tolerance": 1e-9,
+  "max_task_seconds": 180,
+  "device": "cpu"
+}

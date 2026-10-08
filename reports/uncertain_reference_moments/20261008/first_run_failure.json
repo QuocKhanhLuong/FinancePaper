@@ -1,0 +1,56 @@
+{
+  "completed": 490,
+  "diagnostics": [
+    {
+      "method": "highs-ds",
+      "presolve": true,
+      "seconds": 0.0014420419465750456,
+      "status": "success",
+      "value": 0.0,
+      "z": "0"
+    },
+    {
+      "method": "highs-ds",
+      "presolve": true,
+      "seconds": 0.0009523329790681601,
+      "status": "success",
+      "value": 0.25,
+      "z": "1/2"
+    },
+    {
+      "method": "highs-ipm",
+      "presolve": true,
+      "seconds": 0.0011125828605145216,
+      "status": "success",
+      "value": 0.0,
+      "z": "0"
+    },
+    {
+      "method": "highs-ipm",
+      "presolve": true,
+      "seconds": 0.0010295410174876451,
+      "status": "success",
+      "value": 0.25,
+      "z": "1/2"
+    },
+    {
+      "message": "Iteration limit reached. (HiGHS Status 14: model_status is Iteration limit reached; primal_status is Feasible)",
+      "method": "highs-ipm",
+      "presolve": false,
+      "seconds": 0.004291916033253074,
+      "status": "solver_non_success",
+      "z": "0"
+    },
+    {
+      "method": "highs-ipm",
+      "presolve": false,
+      "seconds": 0.0009500000160187483,
+      "status": "success",
+      "value": 0.25,
+      "z": "1/2"
+    }
+  ],
+  "interrupted_exit_code": 130,
+  "remaining_not_run": 1226,
+  "shared_scientific_rows_identical": 490
+}

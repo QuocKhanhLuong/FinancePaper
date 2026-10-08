@@ -1,0 +1,28 @@
+{
+  "binomial_count_replicates": 1728,
+  "box_rows": 1617,
+  "box_strict_improvements": 1203,
+  "deterministic_replicates": 1440,
+  "direct_coverage_failures": 0,
+  "first_completed": 490,
+  "lp_max_error": 7.632783294297952e-17,
+  "lp_solves": 2985,
+  "represented_iid_vectors": 36900864,
+  "sample_direct_tighter_than_vector": 1027,
+  "sample_rows": 3168,
+  "sample_vector_tighter_than_direct": 1716,
+  "shared_scientific_rows_identical": 490,
+  "smallest_probe_residual": 0.0005578303571428,
+  "task_seconds": 15.871082722675055,
+  "tasks": 1716,
+  "underbounds": {
+    "c5": 0,
+    "direct_c5": 0,
+    "direct_generic": 0,
+    "generic": 0,
+    "markov": 0,
+    "vector": 0
+  },
+  "vector_coverage_failures": 0,
+  "warnings": []
+}

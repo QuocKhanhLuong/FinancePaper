@@ -1,0 +1,102 @@
+{
+  "completed_utc": "2026-10-08T12:23:53.539106+00:00",
+  "device": "cpu",
+  "numeric_threads": 1,
+  "validator_sha256": "166b0be8103748ad6ed5e7e22d5fac14c63eeb0f4b2a3f6cce1b24217971ef9e",
+  "commands": [
+    {
+      "label": "complete_resume",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_uncertain_reference_moments_v2.py",
+        "--output",
+        "runs/decision_value_pilot/uncertain_moments_v2_20261008T122300Z",
+        "--resume"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.9652860411442816,
+      "log": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/complete_resume.log",
+      "log_sha256": "be18b20acd0251dea2402497967cfe33a8467ccd21ede915d4dfd4357701126c"
+    },
+    {
+      "label": "scratch_pause",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_uncertain_reference_moments_v2.py",
+        "--config",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_run",
+        "--stop-after-tasks",
+        "1"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.4836569170001894,
+      "log": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_pause.log",
+      "log_sha256": "97c31c10af57859b1d69c916fb85d72344e0e5dd46b6f6e440c1ee7d8a1dfb69"
+    },
+    {
+      "label": "config_drift",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_uncertain_reference_moments_v2.py",
+        "--config",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "Resume rejected: source/config/dependency drift",
+      "accepted": true,
+      "seconds": 0.44869666593149304,
+      "log": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/config_drift.log",
+      "log_sha256": "0e04ee5bc9607445894885df12c056028ad3da564a91be868646127d5eb3f69a"
+    },
+    {
+      "label": "task_corruption",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_uncertain_reference_moments_v2.py",
+        "--config",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "artifact hash mismatch",
+      "accepted": true,
+      "seconds": 0.47271341597661376,
+      "log": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/task_corruption.log",
+      "log_sha256": "f2383c47dcdc43543f09a0b29f5272dbc990cabcd29a4b71f5124ff93d1f29a3"
+    },
+    {
+      "label": "full_pytest",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 25.271586750168353,
+      "log": "runs/decision_value_pilot/uncertain_validation_20261008T122500Z/full_pytest.log",
+      "log_sha256": "d139cf6c1b17d51a55fb4e110fa75a83c64fb8309f292a3223430858cdb1cb50"
+    }
+  ],
+  "complete_resume": {
+    "new": 0,
+    "reused": 1716
+  },
+  "pytest_summary": "272 passed, 1 skipped, 3 warnings in 24.00s",
+  "real_run": "runs/decision_value_pilot/uncertain_moments_v2_20261008T122300Z",
+  "real_receipt_sha256": "a6b5c9e38170cef44222e60d9225ed849089aafc60f7664e2609de3f68beeef8",
+  "scratch_corruption_intentional": true
+}
