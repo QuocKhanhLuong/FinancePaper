@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-10-08T09:28:40.992816+00:00",
+  "branch": "research/completion-disclosure-20261008",
+  "source_commit": "0c9fb0a3d6520a18ce506234c07f712c03a8db1e",
+  "remote_branch_sha_verified": "0c9fb0a3d6520a18ce506234c07f712c03a8db1e",
+  "remote_main_sha": "e7cac089d98500ac57771d419dff46804ced52c3",
+  "main_changed": false,
+  "historical_tracked_paths_changed": false,
+  "source_commit_files_added": 24,
+  "new_research_tasks": 94,
+  "new_research_lp_checks": 396,
+  "exploratory_multiple_hidden_lps_reproduced": 35,
+  "pytest": "192 passed, 1 skipped, 3 existing warnings",
+  "novelty": "PROVISIONAL_SPECIFIC_THEOREM_NOT_ESTABLISHED_PAPER_PRIORITY",
+  "publication_receipt": "This additive receipt follows the verified source push; it does not change frozen audit sources."
+}
