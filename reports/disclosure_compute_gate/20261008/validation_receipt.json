@@ -1,0 +1,102 @@
+{
+  "completed_utc": "2026-10-08T10:16:04.883676+00:00",
+  "device": "cpu",
+  "numeric_threads": 1,
+  "validator_sha256": "448c594ce788ed5dc69cae85023b66523240b0f67695c7198325e6c0a4c38bc0",
+  "commands": [
+    {
+      "label": "complete_resume",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_disclosure_compute_gate.py",
+        "--output",
+        "runs/decision_value_pilot/disclosure_compute_20261008T102000Z",
+        "--resume"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.7275908330921084,
+      "log": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/complete_resume.log",
+      "log_sha256": "0d0860bea5d71d869f6a78876182c8e09b4e7fb114f1a74418619f71e1179c8e"
+    },
+    {
+      "label": "scratch_pause",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_disclosure_compute_gate.py",
+        "--config",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_run",
+        "--stop-after-tasks",
+        "1"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 0.7214030830655247,
+      "log": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_pause.log",
+      "log_sha256": "504f5db183032e3be3698da625c5c4cd107d0e526ad5dfb89afb1b526d38dcc6"
+    },
+    {
+      "label": "config_drift",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_disclosure_compute_gate.py",
+        "--config",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "Resume rejected: source/config/dependency drift",
+      "accepted": true,
+      "seconds": 0.6872539159376174,
+      "log": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/config_drift.log",
+      "log_sha256": "c64de6e23565293b1e29b3092ddf674e402a6d1ca2fa4993d90768abbae5c0cf"
+    },
+    {
+      "label": "task_corruption",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "scripts/run_disclosure_compute_gate.py",
+        "--config",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_config.json",
+        "--output",
+        "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/scratch_run",
+        "--resume"
+      ],
+      "returncode": 1,
+      "expected_error": "artifact hash mismatch",
+      "accepted": true,
+      "seconds": 0.7003996248822659,
+      "log": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/task_corruption.log",
+      "log_sha256": "79f04052bb110763df9a242e523a9b0a8401bc46cc6d3f2cf382c4d17d913373"
+    },
+    {
+      "label": "full_pytest",
+      "argv": [
+        "/Users/alvinluong/FinancePaper/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "expected_error": null,
+      "accepted": true,
+      "seconds": 24.461810000007972,
+      "log": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/full_pytest.log",
+      "log_sha256": "705eec9797397ffac74004955113ad720d1ee9918a2f8325e04185435f82ee3a"
+    }
+  ],
+  "complete_resume": {
+    "new": 0,
+    "reused": 54
+  },
+  "pytest_summary": "222 passed, 1 skipped, 3 warnings in 23.31s",
+  "real_run": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z",
+  "real_receipt_sha256": "5a2b3f14f7511803ad6a395a17fdae8034dab881b978678ed97cfd4a2dd75fb2",
+  "scratch_corruption_intentional": true
+}

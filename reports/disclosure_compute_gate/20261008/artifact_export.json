@@ -1,0 +1,32 @@
+{
+  "copies": {
+    "reports/disclosure_compute_gate/20261008/cells.csv": {
+      "sha256": "b64eecb207894e2f210ceeb85d45a9d3c6e1cbcfd40653ec388a8e04c83410d7",
+      "source": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/cells.csv"
+    },
+    "reports/disclosure_compute_gate/20261008/costs.csv": {
+      "sha256": "2bbd171f18d935f16fa049187992880104c2c5a8cc70936178aacd587993753e",
+      "source": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/costs.csv"
+    },
+    "reports/disclosure_compute_gate/20261008/execution_receipt.json": {
+      "sha256": "5a2b3f14f7511803ad6a395a17fdae8034dab881b978678ed97cfd4a2dd75fb2",
+      "source": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/execution_receipt.json"
+    },
+    "reports/disclosure_compute_gate/20261008/manifest.json": {
+      "sha256": "051984c1739744885270e2ea8881dd467ce4ad2cd2cc8d6e1b24c516d0cfc8af",
+      "source": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/manifest.json"
+    },
+    "reports/disclosure_compute_gate/20261008/validation_receipt.json": {
+      "sha256": "37c3e99973f142bb01aefafc0b1160aa54147b35618acca1c11e4d79908c3624",
+      "source": "runs/decision_value_pilot/disclosure_compute_validation_20261008T102500Z/validation_receipt.json"
+    }
+  },
+  "derived": {
+    "reports/disclosure_compute_gate/20261008/cost_summary.csv": "601c28a57b54f5f4e26b370f7872f080b4fe4efb56b622b21c8d42aec1e0de53",
+    "reports/disclosure_compute_gate/20261008/coverage.csv": "7c0467c19133555c343932f8d53449eef7e517c99a53e4f1d8287dc5023c6c7e",
+    "reports/disclosure_compute_gate/20261008/summary.json": "d6b6d2e7d478a32b14b40ac283f62fd4cb75fb4041c283dadc101ac5b7e9b96c"
+  },
+  "local_progress": "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/progress.jsonl",
+  "local_progress_sha256": "1e468f45163d476a0e8ff5d00f3db590c014f2b66929702cb31d54dc595552aa",
+  "summary_script_sha256": "ae3d79bcd8db99e1c30d66cbc88002b15cdeaf32582dfb0b6dbd1419b842ff39"
+}

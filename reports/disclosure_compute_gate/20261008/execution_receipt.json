@@ -1,0 +1,146 @@
+{
+  "base_git_head": "9577a2045f2be11b47cd09d585afec7b969e13b0",
+  "cells": 486,
+  "completed_utc": "2026-10-08T10:15:24.243490+00:00",
+  "created_utc": "2026-10-08T10:14:57.894304+00:00",
+  "financial_evaluation": "NOT_RUN",
+  "frozen": {
+    "config": {
+      "branch_node_budget": 5000,
+      "contamination": [
+        "0",
+        "1/50",
+        "1/10"
+      ],
+      "device": "cpu",
+      "enumerated_dimensions": [
+        8,
+        12,
+        16,
+        20
+      ],
+      "enumeration_chunk": 65536,
+      "families": [
+        "linear",
+        "sparse_polynomial",
+        "shared_gate"
+      ],
+      "large_dimensions": [
+        28,
+        40
+      ],
+      "max_task_seconds": 180,
+      "mc_draws": [
+        256,
+        2048
+      ],
+      "mc_family_error": 0.05,
+      "model_seeds": [
+        271,
+        811,
+        1619
+      ],
+      "reference_plus_probabilities": [
+        "9/10",
+        "97/100",
+        "199/200"
+      ],
+      "release_budgets": [
+        "1/100",
+        "1/20",
+        "1/10"
+      ],
+      "schedule_seed": 105831,
+      "schema": 1,
+      "timing_repeats": 5,
+      "tolerance": 1e-10
+    },
+    "device": "cpu",
+    "numeric_threads": 1,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.16",
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/run_disclosure_compute_gate.py": "29584ca2f32d7a0c8f5570fb049b96a8f3815a5d3fa388816987257ccf74f84d",
+      "configs/disclosure_compute_gate.json": "473525599278e089b891aacc66f923d2ddc3e325f89ff2c52ed2a3532ba319a3",
+      "docs/DISCLOSURE_COMPUTE_GATE.md": "7d9666bcfdaacb8825e47df5f7c9958f20ecad22c346c47ba4bddfdcaf3a282b",
+      "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "src/financepaper/evaluation/disclosure_compute.py": "bb7b8408a23d588854d711b576bf90ab385d2c070a31abd2618b85ce2be4ca6a",
+      "src/financepaper/evaluation/law_robust_disclosure.py": "11643f329a67052d14cec78fd79fd49067eb5c3cd2d8d5ca2e67d8d819666dd9",
+      "tests/test_disclosure_compute.py": "c22f5e6829a4cdeda44cc7e4f71c099d4315e35b56e183bdb16f97401a3e9c11",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "tqdm": "4.70.1"
+    }
+  },
+  "human_study": "NOT_RUN",
+  "model_fitting": "NOT_RUN",
+  "outputs": {
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/cells.csv": "b64eecb207894e2f210ceeb85d45a9d3c6e1cbcfd40653ec388a8e04c83410d7",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/costs.csv": "2bbd171f18d935f16fa049187992880104c2c5a8cc70936178aacd587993753e"
+  },
+  "task_receipts": {
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_linear_s1619_complete.json": "cc3ba2ebd57a74ee595dfe40a66fc303d9124212deb01194c3ad7be48c3bc6ba",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_linear_s271_complete.json": "34bd587cb659d6b10abf56c2e038a5127557a14c3ffbaa2e2eadd3345fddc409",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_linear_s811_complete.json": "bf676e3abf1a2f67db1c77131f2bfcb3d5f1deab39ef94cb915f970f69b4a907",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_shared_gate_s1619_complete.json": "43e3819f1916dc498f069c041597c99a26b3e937eb0df2e740d3e21ce126d10c",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_shared_gate_s271_complete.json": "d7d2c808c7dd6815889676544be54dba343fa16ab3e34a44aec501cc6a651d3f",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_shared_gate_s811_complete.json": "677fbd0304a620398e535458fb6080586e589de5b78c4342f188fdb75cca037a",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_sparse_polynomial_s1619_complete.json": "791c2d1acffe8d017fe64270e6a6ef3454c9d59fb0fcd558cdebdff9004d09a7",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_sparse_polynomial_s271_complete.json": "585ffe8d5b1d9972fecb1d87b982ba486721a22b5d0513626ae141379e599954",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k12_sparse_polynomial_s811_complete.json": "bb3f452914193efa2cdc6cdb6a8c787f1e5ce70100c77a5b78eb904fd3264096",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_linear_s1619_complete.json": "0e55102d2505276c40d0e4723d826b5427b509daaaff937e0b3b2ff09dda441a",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_linear_s271_complete.json": "43a3861d63226bff0eb37a7ab16a9816d642fe32af1cc9ce886be9267b1f8032",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_linear_s811_complete.json": "4d5295cf5c772bc625363986794612e344a0008aeb4d4704df6683a97eb3c8b9",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_shared_gate_s1619_complete.json": "1882df4fb5af2601474da0704835a78aae3d5a153b0c03c4df0595ef62022776",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_shared_gate_s271_complete.json": "1d2a7e6fe8d9943ce13a851cf6c0e9139cd5d05433c120e1f054eeb3bd10322c",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_shared_gate_s811_complete.json": "e191bff7ad840afc9ca4b590023c3956f92d04ab947653190ff01042bc08a138",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_sparse_polynomial_s1619_complete.json": "3fec0cf8b9b26de6b93c7199879288eae0380a9b74e3131ccfc21c9e05288e6a",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_sparse_polynomial_s271_complete.json": "12dead39880b3891d26c46c32658ddfa657cbc21e4b04ef0af1e69f9f95a364b",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k16_sparse_polynomial_s811_complete.json": "623ab1e7f69af83308f4abffd7016096c72ac7c40d7a1b8a5ecfd1cc2639b013",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_linear_s1619_complete.json": "4e0258184ee7604411d09daf8fae770c569c50b9c2c6b12c4ff8003a0127e1af",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_linear_s271_complete.json": "b73f2933c507b7b4a1e4f339574630f78df3a15773688ac30e01c7d67962e609",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_linear_s811_complete.json": "4ac06887b5ccaad40e06184463131f78da810d3e9f9b53bb36bdc0aaecafcdb3",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_shared_gate_s1619_complete.json": "ee0bf6ba97839ec0fc050f39170fba131c79780cc002b12f6243aca25df0773a",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_shared_gate_s271_complete.json": "77d68d9edb785fdf8d838664b03357ec68945275d647f13fdc895d93c6a04ece",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_shared_gate_s811_complete.json": "6f4ec9da35734200984892bdb056e456f361ee2c602382131ebeec9da858e20e",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_sparse_polynomial_s1619_complete.json": "d57813a981fbca3f4fa8c24a83211272939f41c1ef575e6977839b8ef419aa3f",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_sparse_polynomial_s271_complete.json": "00f0dc43d72580f62a9a221ab878c6efad4d48ed6118cc6cac1418884c68f0d3",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k20_sparse_polynomial_s811_complete.json": "50cb54c7f2e587701981cb161910e11ae40516a57dcaad4ef45f6c6d149e6243",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_linear_s1619_complete.json": "ebf703cca22d74fda50b8f89d24dd468aa1e9cae78b0dd9e98bdb11531be4264",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_linear_s271_complete.json": "a225a2f7db1085fb79082b2fdbf85e83f5c7516b9a2c7b36ef358110feb79ff1",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_linear_s811_complete.json": "30fc289f3eb5265829c1bc8b77a116d4c1cf9a63bc0a842b9cb056eac719eb27",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_shared_gate_s1619_complete.json": "9675f13e3246b7a739d4062107b912621c6873914c24f03e48e138d92721af38",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_shared_gate_s271_complete.json": "54b2a9d656ac3473d0fbcee6e46c28cdbd010ae503ad83c32d540f3af80242c3",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_shared_gate_s811_complete.json": "7e3d610d99f297c22d1965cc93859c078546ce08e40a4d773089f02c46a54d4c",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_sparse_polynomial_s1619_complete.json": "eef60ed158e35d02a9b683dc636d5cfb6206deb7d02c264c9fabc978720cb82b",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_sparse_polynomial_s271_complete.json": "388b4d6fb0a2ecfe96e9d41c0559a4f77cf71f789fc11b727a9968ca24830844",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k28_sparse_polynomial_s811_complete.json": "7815803f1c4eca4009a15fa7d37245c2d216c851302c0bb5d1b6d23855e6d1e3",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_linear_s1619_complete.json": "c24c45198c8282f387a9dcd37b6c3b47e292b88016580b2d17579959a51dff1c",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_linear_s271_complete.json": "95f40c5aa8887855204e786b16e6f2ab3f0e6f2dfbaf0508f5621ee361b04085",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_linear_s811_complete.json": "c3aeb5a831fbda6056e4394cde4ecb5e078dd91f7e55f008716f92a89eb02f3a",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_shared_gate_s1619_complete.json": "4ca798fe7d2388a37fa040d5d2c42b1c6694f0e6155dc3d1f376c51d441f1c8e",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_shared_gate_s271_complete.json": "10fc3fa6169af8935faccf6a6f54e50d4cd133036ccbb8b80a273b5afb65c80f",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_shared_gate_s811_complete.json": "1dda06f16536a957558a47cf5b5ce426bb693126e080b54336b966a5e5aa7885",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_sparse_polynomial_s1619_complete.json": "5221ea2f594a8639921af1c9d0d74ca1b3e90d44e50314044a60458e43062ac2",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_sparse_polynomial_s271_complete.json": "5e7873dce0297f8173411126aad235be98066a998020365b0c14704cc59bcae1",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k40_sparse_polynomial_s811_complete.json": "317fe66f7d7fc6202c3aa3103f9d0a5c6fa69d0b87505ab7459a7c5ca91ad9ce",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_linear_s1619_complete.json": "828562b5db7671a3e3c4dc08032909c3d38cb639d01e49296f28b4662249a020",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_linear_s271_complete.json": "fa2eda183fa9f974d296e846b258b0dbdf3b3211008157cf3e77ba5f4097ffbc",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_linear_s811_complete.json": "32437f5a512413e6ee7ef2f0c22375f35a404c7ede5fac3830c07202a192ee15",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_shared_gate_s1619_complete.json": "daded17a5f9cb36c30810178ce8268ce8559456d5e0b5a606f92a01ad49b2629",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_shared_gate_s271_complete.json": "0680a57596d264a92219661183c1c257d411bc4e67fafb389c9f1430659fb943",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_shared_gate_s811_complete.json": "2978140711e251ff8f6b52cb09651cfccc7e2298a46025d82b5cd7855c34aba4",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_sparse_polynomial_s1619_complete.json": "2b4c229aafe243ae5b80aca8d396c4da3481fc73db2a520c55e6321447f24d13",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_sparse_polynomial_s271_complete.json": "4409fcf8d53411ddb7cfd50ef743226c95cff68a332f0e6c72fdfb719bd314fc",
+    "runs/decision_value_pilot/disclosure_compute_20261008T102000Z/model_k8_sparse_polynomial_s811_complete.json": "640d4fadd2dab379fca5e571a38d1ebc686852e66dcd046c283c72b425112c01"
+  },
+  "task_seconds": 1.445963078411296,
+  "tasks": 54,
+  "warnings": []
+}

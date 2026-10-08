@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "enumerated_dimensions": [8, 12, 16, 20],
+  "large_dimensions": [28, 40],
+  "families": ["linear", "sparse_polynomial", "shared_gate"],
+  "model_seeds": [271, 811, 1619],
+  "reference_plus_probabilities": ["9/10", "97/100", "199/200"],
+  "contamination": ["0", "1/50", "1/10"],
+  "release_budgets": ["1/100", "1/20", "1/10"],
+  "mc_draws": [256, 2048],
+  "mc_family_error": 0.05,
+  "branch_node_budget": 5000,
+  "enumeration_chunk": 65536,
+  "timing_repeats": 5,
+  "schedule_seed": 105831,
+  "max_task_seconds": 180,
+  "tolerance": 1e-10,
+  "device": "cpu"
+}

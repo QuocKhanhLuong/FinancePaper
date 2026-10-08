@@ -1,0 +1,81 @@
+{
+  "branch_model_law_tasks": 162,
+  "branch_nodes": 165665,
+  "c6_extra_releases": 0,
+  "cells": 486,
+  "cheap_certificate_gate": {
+    "alpha": 0.05,
+    "cells": 324,
+    "coverage": 0.2962962962962963,
+    "largest_enumerated_dimension": 20,
+    "median_enumeration_to_mean_cost_ratio": 193.95015997148752,
+    "pass_gate": true,
+    "released": 96
+  },
+  "completed_branch_model_law_tasks": 137,
+  "enumerated_cells": 324,
+  "financial_evaluation": "NOT_RUN",
+  "human_study": "NOT_RUN",
+  "incremental_c6_gate": "NO_GO_reference_mean_available",
+  "large_not_enumerated_cells": 162,
+  "maximum_moment_error": 3.3306690738754696e-16,
+  "mc_bounds": 972,
+  "mc_draws": 1119744,
+  "mc_misses_on_enumerated": {
+    "2048": 0,
+    "256": 0
+  },
+  "progress_milestones": [
+    {
+      "cells": 486,
+      "device": "cpu",
+      "event": "start",
+      "resume": false,
+      "tasks": 54,
+      "utc": "2026-10-08T10:14:57.910956+00:00"
+    },
+    {
+      "event": "intentional_pause",
+      "new": 1,
+      "remaining": 53,
+      "reused": 0,
+      "utc": "2026-10-08T10:14:57.929860+00:00"
+    },
+    {
+      "cells": 486,
+      "device": "cpu",
+      "event": "start",
+      "resume": true,
+      "tasks": 54,
+      "utc": "2026-10-08T10:15:22.767213+00:00"
+    },
+    {
+      "event": "complete",
+      "new": 53,
+      "reused": 1,
+      "seconds": 1.475841541076079,
+      "utc": "2026-10-08T10:15:24.245844+00:00"
+    },
+    {
+      "cells": 486,
+      "device": "cpu",
+      "event": "start",
+      "resume": true,
+      "tasks": 54,
+      "utc": "2026-10-08T10:15:38.215745+00:00"
+    },
+    {
+      "event": "complete",
+      "new": 0,
+      "reused": 54,
+      "seconds": 0.02586437505669892,
+      "utc": "2026-10-08T10:15:38.244063+00:00"
+    }
+  ],
+  "pytest_summary": "222 passed, 1 skipped, 3 warnings in 23.31s",
+  "reference_strictly_tighter_cells": 324,
+  "task_seconds": 1.445963078411296,
+  "tasks": 54,
+  "total_enumerated_states": 10066176,
+  "warnings": []
+}

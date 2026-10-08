@@ -1,0 +1,78 @@
+{
+  "base_git_head": "9577a2045f2be11b47cd09d585afec7b969e13b0",
+  "created_utc": "2026-10-08T10:14:57.894304+00:00",
+  "frozen": {
+    "config": {
+      "branch_node_budget": 5000,
+      "contamination": [
+        "0",
+        "1/50",
+        "1/10"
+      ],
+      "device": "cpu",
+      "enumerated_dimensions": [
+        8,
+        12,
+        16,
+        20
+      ],
+      "enumeration_chunk": 65536,
+      "families": [
+        "linear",
+        "sparse_polynomial",
+        "shared_gate"
+      ],
+      "large_dimensions": [
+        28,
+        40
+      ],
+      "max_task_seconds": 180,
+      "mc_draws": [
+        256,
+        2048
+      ],
+      "mc_family_error": 0.05,
+      "model_seeds": [
+        271,
+        811,
+        1619
+      ],
+      "reference_plus_probabilities": [
+        "9/10",
+        "97/100",
+        "199/200"
+      ],
+      "release_budgets": [
+        "1/100",
+        "1/20",
+        "1/10"
+      ],
+      "schedule_seed": 105831,
+      "schema": 1,
+      "timing_repeats": 5,
+      "tolerance": 1e-10
+    },
+    "device": "cpu",
+    "numeric_threads": 1,
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.11.16",
+    "sources": {
+      "/Users/alvinluong/FinancePaper/scripts/run_disclosure_compute_gate.py": "29584ca2f32d7a0c8f5570fb049b96a8f3815a5d3fa388816987257ccf74f84d",
+      "configs/disclosure_compute_gate.json": "473525599278e089b891aacc66f923d2ddc3e325f89ff2c52ed2a3532ba319a3",
+      "docs/DISCLOSURE_COMPUTE_GATE.md": "7d9666bcfdaacb8825e47df5f7c9958f20ecad22c346c47ba4bddfdcaf3a282b",
+      "pyproject.toml": "d8356e72fc54eb0ddefd1405392ccee2913dce7e45a5820df2b78a6264e0a123",
+      "scripts/run_completion_novelty_audit.py": "f50b8998143c7029e165da1ca2a20767c3fbe1528b7590f2dc6640ab3918ca61",
+      "src/financepaper/evaluation/decision_value.py": "902cc39308b4aa0450977611c616da8e36427d01c6606bee1324c9b2cad68532",
+      "src/financepaper/evaluation/disclosure_compute.py": "bb7b8408a23d588854d711b576bf90ab385d2c070a31abd2618b85ce2be4ca6a",
+      "src/financepaper/evaluation/law_robust_disclosure.py": "11643f329a67052d14cec78fd79fd49067eb5c3cd2d8d5ca2e67d8d819666dd9",
+      "tests/test_disclosure_compute.py": "c22f5e6829a4cdeda44cc7e4f71c099d4315e35b56e183bdb16f97401a3e9c11",
+      "uv.lock": "a7f9564b2e38626805a0868ae466ac2f6f436269e12a09d1a0fc0ce3b164497a"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "tqdm": "4.70.1"
+    }
+  }
+}
